@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TLS_CIPHERSCONFIG - Vulcanians" parallel="false">
+    <test name="Setup Teardown TlsCiphersConfig Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTlsCiphersConfig"/>
+        </classes>
+    </test>
+    <test name="TlsCiphersConfig Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TlsCiphersConfigTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

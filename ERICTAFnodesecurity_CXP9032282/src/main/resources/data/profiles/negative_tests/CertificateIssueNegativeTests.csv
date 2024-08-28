@@ -1,0 +1,12 @@
+suiteProfile,testType,certType,nodeindex,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType,fileName,expectedMessage
+maintrack,CT_Invalid_CertType,IPSECS,nonexistentnode,SCEP,,,,,,"Error 10091 : Invalid argument value :  Invalid argument for parameter certtype. Accepted arguments are [IPSEC, OAM]"
+maintrack,CT_Node_Missing,OAM,nonexistentnode,SCEP,,,,,,"Error 10004 : The NetworkElement specified does not exist"
+maintrack,Xml_Xsd_Mismatch,OAM,erbs001,,,,,,certificate_issue_invalid_test.xml,"Error 10014 : Input xml validation with Schema failed. Please provide the valid XML input."
+maintrack,Xml_Empty,OAM,erbs001,,,,,,certificate_issue_empty_test.xml,"Error 10013 : File content is not valid."
+maintrack,Invalid_EP,OAM,erbs001,SCEP,MicroRBSOAM_CHAIN_EP_invalid,,,,,"Error 10022 : Requested EntityProfileName does not exist."
+maintrack,Invalid_Algorithm,OAM,erbs001,SCEP,,ECDSA_512,,,,"Error 10022 : Requested AlgorithmKeySize is not supported for this node.  : Accepted arguments are [RSA_2048]"
+maintrack,Invalid_Subj,OAM,erbs001,SCEP,,,192.168.0.100,OTHER_NAME,,"Error 10022 : Requested SubjectAlternativeNameType is not supported.  : Accepted arguments are [IP_ADDRESS, DNS_NAME, RFC822_NAME]"
+maintrack,Invalid_IpAddress,OAM,erbs001,SCEP,,,192.168.100,IP_ADDRESS,,"Error 10022 : Requested SubjectAlternativeName is invalid. Please specify a valid SubjectAlternativeName format"
+maintrack,Missing_Subj,IPSEC,erbs001,SCEP,,,,,,"Error 10022 : For CertificateType IPSEC subjectAltName and subjAltNameType can't be empty."
+maintrack,Missing_Subj,IPSEC,erbs001,SCEP,,,,IP_ADDRESS,,"Error 10022 : For CertificateType IPSEC subjectAltName and subjAltNameType can't be empty."
+maintrack,Missing_Subj,IPSEC,erbs001,SCEP,,,192.168.0.100,,,"Error 10022 : For CertificateType IPSEC subjectAltName and subjAltNameType can't be empty."

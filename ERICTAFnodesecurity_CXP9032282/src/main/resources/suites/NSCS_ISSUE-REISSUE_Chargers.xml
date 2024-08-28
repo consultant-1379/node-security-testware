@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_ISSUE-REISSUE - Chargers" parallel="false">
+    <test name="Setup Teardown ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueReIssue"/>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+                <methods>
+                    <include name="issueOAMPositiveTest"/>
+                    <include name="reIssueOAMCertTypePositiveTest"/>
+                    <include name="reIssueOAMCaNamePositiveTest"/>
+                    <include name="issueOAMNegativeTest"/>
+                    <include name="reIssueOAMCertTypeNegativeTest"/>
+                    <exclude name="reIssueOAMCaNameNegativeTest"/>
+                    <include name="issueReIssueNegativeSyntax"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

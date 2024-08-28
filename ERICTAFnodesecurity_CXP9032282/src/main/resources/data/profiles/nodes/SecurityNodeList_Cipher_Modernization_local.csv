@@ -1,0 +1,4 @@
+suiteProfile,nodeType,networkElementId,networkElementRange,ipAddress,sync,start,ossPrefix,port,transportType,buildNetsimObjects,platformType,ossModelIdentity
+
+maintrack,RadioNode,LTE04dg2ERBS00001,,192.168.100.177,sync,start,,6513,TLS,true,,17A-R2YX
+

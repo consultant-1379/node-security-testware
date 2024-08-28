@@ -1,0 +1,6 @@
+suiteProfile,testType,nodeindex,secureUserName,secureUserPassword,algorithmTypeSize,fileName,expectedMessage
+maintrack,sshKeyStaticError,sgsn001,netsim,netsim,DSA_2048,,"Invalid argument value : Invalid argument for parameter algorithm-type-size. Accepted arguments are [DSA_1024, RSA_1024, RSA_2048, RSA_4096, RSA_8192, RSA_16384]"
+maintrack,sshKeyStaticError,nonexistentnode,netsim,netsim,RSA_2048,,"Error 10004 : The NetworkElement specified does not exist"
+maintrack,sshKeyStaticError,sgsn001,netsim,netsim,RSA_2048,,"Error 10006 : The node specified requires the node credentials to be defined"
+maintrack,sshkeyAlreadyGenerated,sgsn001,netsim,netsim,RSA_2048,,"Error 10093 : Key pair already generated"
+maintrack,sshkeyNotFound,sgsn001,netsim,netsim,RSA_2048,,"Error 10092 : Key pair not found"

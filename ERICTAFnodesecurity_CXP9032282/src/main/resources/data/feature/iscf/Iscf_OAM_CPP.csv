@@ -1,0 +1,2 @@
+targetCategory,targetType,targetModelIdentifier,modelIdentifierType,enrollmentMode,logicalName,nodeFdn,wantedSecurityLevel,minimumSecurityLevel,expectedEndEntity,expectedKeyLength,expectedEnrolMode,expectedDistinguishedName-oam,expectedCertificateAuthorityDn-oam
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,"LTEiscfERBS00102",1,2,"CN=LTEiscfERBS00102-oam","CN=NE_OAM_CA"

@@ -1,0 +1,12 @@
+command,purpose
+secadm trust remove,no command mandatory parameters
+secadm trust remove -ca NE_OAM_CA, missing parameter
+secadm trust remove -isdn ISSUER, missing parameter
+secadm trust remove -sn 12345, missing parameter
+secadm trust remove --certtype IPSEC, missing parameter
+secadm trust remove -ca NE_OAM_CA -sn 12345, missing parameter
+secadm trust remove -isdn NE_OAM_CA -sn 12345, missing parameter
+secadm trust remove -isdn NE_OAM_CA -ct OAM -sn 12345, reverse order parameter
+secadm trust remove -ca NE_OAM_CA -ct OAM -sn 12345, reverse order parameter
+secadm trust remove -isdn NE_OAM_CA -sn 12345 -ct OAM, missing parameter
+secadm trust remove -ca NE_OAM_CA -sn 12345 -ct OAM, missing parameter

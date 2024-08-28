@@ -1,0 +1,12 @@
+command,purpose,expectedMessage
+"secadm trust remove",no command mandatory parameters,Error 10001
+"secadm trust remove -ca NE_OAM_CA",missing parameter,Error 10001
+"secadm trust remove -isdn ISSUER",missing parameter,Error 10001
+"secadm trust remove -sn 12345",missing parameter,Error 10001
+"secadm trust remove --certtype IPSEC",missing parameter,Error 10001
+"secadm trust remove -ca NE_OAM_CA -sn 12345",missing parameter,Error 10001
+"secadm trust remove -isdn NE_OAM_CA -sn 12345",missing parameter,Error 10001
+"secadm trust remove -isdn NE_OAM_CA -ct OAM -sn 12345",reverse order parameter,Error 10001
+"secadm trust remove -ca NE_OAM_CA -ct OAM -sn 12345",reverse order parameter,Error 10001
+"secadm trust remove -isdn NE_OAM_CA -sn 12345 -ct OAM",missing parameter,Error 10001
+"secadm trust remove -ca NE_OAM_CA -sn 12345 -ct OAM",missing parameter,Error 10001

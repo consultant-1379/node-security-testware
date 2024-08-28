@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_WEAK_TLS_PROTOCOLS_AND_ALGORITHMS_DISABLE - Vulcanians" parallel="tests">
+    <test name="Setup Teardown for Disable Weak TLS Protocols and Algorithms Test">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioWeakTlsProtocolsAndAlgorithmsDisable"/>
+        </classes>
+    </test>
+    <test name="Disable Weak TLS Protocols and Algorithms Test" preserve-order="false">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.nscs.arnlrfa250scenario.WeakTlsProtocolsAndAlgorithmsDisableTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

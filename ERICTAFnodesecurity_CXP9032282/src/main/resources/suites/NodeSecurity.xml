@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security - Skyfall">
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- SYNTAX ERROR SCENARIOS -->
+
+    <test name="SyntaxErrorScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SyntaxErrorScenario"/>
+        </classes>
+    </test>
+
+    <!-- CREDENTIALS SCENARIOS -->
+
+    <test name="CredentialsScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CredentialsScenario"/>
+        </classes>
+    </test>
+
+    <test name="GetCredentialsScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.GetCredentialsScenario"/>
+        </classes>
+    </test>
+
+    <!-- SSH KEY SCENARIOS -->
+    <!-- Removed, as no longer working after efabgal's refactoring -->
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateIssueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario"/>
+        </classes>
+    </test>
+
+    <!-- CERTIFICATE REISSUE SCENARIOS -->
+
+    <test name="CertificateReissueScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateReissueScenario"/>
+        </classes>
+    </test>
+
+    <!-- TRUST DISTRIBUTE SCENARIOS -->
+
+    <test name="TrustDistributeScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustDistributeScenario"/>
+        </classes>
+    </test>
+
+    <!-- TRUST REMOVE SCENARIOS -->
+
+    <test name="TrustRemoveScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustRemoveScenario"/>
+        </classes>
+    </test>
+
+</suite>

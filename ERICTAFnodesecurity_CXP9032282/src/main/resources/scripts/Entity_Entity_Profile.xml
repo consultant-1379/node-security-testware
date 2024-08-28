@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProfilesSchema.xsd">
+    <EntityProfile Name="SLS_USER_EP">
+        <ProfileValidity>2021-01-01</ProfileValidity>
+        <Modifiable>true</Modifiable>
+        <Category>
+            <Modifiable>true</Modifiable>
+            <Name>UNDEFINED</Name>
+        </Category>
+        <Subject>
+            <SubjectField>
+                <Type>COMMON_NAME</Type>
+                <Value>CN_PKI</Value>
+            </SubjectField>
+        </Subject>
+        <SubjectAltName>
+            <Critical>false</Critical>
+            <SubjectAltNameField>
+                <Type>DIRECTORY_NAME</Type>
+                <Value xsi:type="SubjectAltNameString">
+                    <StringValue>DN=SANDIR value</StringValue>
+                </Value>
+            </SubjectAltNameField>
+        </SubjectAltName>
+        <KeyGenerationAlgorithm>
+            <Name>RSA</Name>
+            <KeySize>4096</KeySize>
+        </KeyGenerationAlgorithm>
+        <CertificateProfile Name="SLS_USER_CP"/>
+        <KeyUsage>
+            <Critical>true</Critical>
+            <SupportedKeyUsageType>DATA_ENCIPHERMENT</SupportedKeyUsageType>
+        </KeyUsage>
+        <ExtendedKeyUsage>
+            <Critical>true</Critical>
+            <SupportedKeyPurposeId>ID_KP_EMAIL_PROTECTION</SupportedKeyPurposeId>
+        </ExtendedKeyUsage>
+    </EntityProfile>
+</Profiles>

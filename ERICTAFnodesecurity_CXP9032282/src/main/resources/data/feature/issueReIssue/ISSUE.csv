@@ -1,0 +1,89 @@
+suiteName,RFA250,nodeType,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType,fileName
+#,,,,,,
+# numbers of rows with column value nodeType have to be the same number of rows into nodesToAdd.csv for the same nodeTypes,,,,,,
+#,,,,,,
+##
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,ERBS,OAM,CMPv2_INITIAL,,,,,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,ERBS,IPSEC,CMPv2_INITIAL,,,192.168.100.1,IP_ADDRESS,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,MGW,OAM,CMPv2_INITIAL,,,,,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RNC,OAM,CMPv2_INITIAL,,,,,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RNC,IPSEC,CMPv2_INITIAL,,,192.168.100.1,IP_ADDRESS,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RBS,OAM,CMPv2_INITIAL,,,,,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RBS,IPSEC,CMPv2_INITIAL,,,192.168.100.1,IP_ADDRESS,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RadioNode,OAM,,,,,,
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+##
+#Shared-CNF - OAM
+NSCS_Cbpoi - Boru,n,Shared-CNF,OAM,,,,,,
+NSCS_Cbpoi - Skyfall,y,vDU,OAM,,,,,,
+#
+# vDU vCU - OAM
+NSCS_Cbpoi - Incognito,n,vCU-CP,OAM,,,,,,
+#NSCS_Cbpoi - Incognito,n,vCU-UP,OAM,,,,,,
+#
+# ERBS - OAM
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,CMPv2_INITIAL,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,CMPv2_INITIAL,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,SCEP,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,OAM,SCEP,,,,,
+#NSCS_ISSUE-REISSUE - Skyfall,n,ERBS,OAM,CMPv2_VC,MicroRBSOAM_CHAIN_EP,RSA_2048,,,
+#NSCS_ISSUE-REISSUE - Skyfall,n,ERBS,OAM,CMPv2_VC,MicroRBSOAM_CHAIN_EP,RSA_2048,,,
+# ERBS - IPSEC
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,CMPv2_INITIAL,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,CMPv2_INITIAL,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,SCEP,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,ERBS,IPSEC,SCEP,,,192.168.100.1,IP_ADDRESS,
+#NSCS_ISSUE-REISSUE - Skyfall,n,ERBS,IPSEC,CMPv2_VC,MicroRBSIPSec_SAN_CHAIN_EP,RSA_2048,www.dns4.com,DNS_NAME,
+#NSCS_ISSUE-REISSUE - Skyfall,n,ERBS,IPSEC,CMPv2_VC,MicroRBSIPSec_SAN_CHAIN_EP,RSA_2048,www.dns6.com,DNS_NAME,
+#
+# RadioNode - OAM
+NSCS_ISSUE-REISSUE - Skyfall,y,RadioNode,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Skyfall,y,RadioNode,OAM,,,,,,
+#NSCS_ISSUE-REISSUE - Skyfall,n,RadioNode,OAM,CMPv2_VC,DUSGen2OAM_CHAIN_EP,RSA_2048,,,
+#NSCS_ISSUE-REISSUE - Skyfall,n,RadioNode,OAM,CMPv2_VC,DUSGen2OAM_CHAIN_EP,RSA_2048,,,
+# RadioNode - IPSEC
+NSCS_ISSUE-REISSUE - Skyfall,y,RadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Skyfall,y,RadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+#NSCS_ISSUE-REISSUE - Skyfall,n,RadioNode,IPSEC,CMPv2_VC,DUSGen2IPSec_SAN_CHAIN_EP,RSA_2048,www.dns4.com,DNS_NAME,
+#NSCS_ISSUE-REISSUE - Skyfall,n,RadioNode,IPSEC,CMPv2_VC,DUSGen2IPSec_SAN_CHAIN_EP,RSA_2048,www.dns6.com,DNS_NAME,
+#
+NSCS_ISSUE-REISSUE - Falcons,y,VTFRadioNode,OAM,CMPv2_VC,DUSGen2OAM_CHAIN_EP,RSA_2048,,,
+NSCS_ISSUE-REISSUE - Falcons,y,VTFRadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+##
+NSCS_ISSUE-REISSUE - Quarks,y,Router6675,OAM,CMPv2_VC,DUSGen2OAM_CHAIN_EP,RSA_2048,,,
+#
+NSCS_ISSUE-REISSUE - Quarks,y,Router6675,IPSEC,CMPv2_VC,,,192.168.100.1,IP_ADDRESS,
+##
+NSCS_ISSUE-REISSUE - Falcons,y,5GRadioNode,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Falcons,y,5GRadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+NSCS_ISSUE-REISSUE - Falcons,y,vPP,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Falcons,y,vPP,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Falcons,y,vRC,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Falcons,y,vRC,OAM,,,,,,
+#
+NSCS_ISSUE-REISSUE - Stormborn,y,BSC,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Chargers,y,MGW,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Chargers,y,MRS,OAM,,,,,,
+NSCS_ISSUE-REISSUE - Chargers,y,vBSC,OAM,,,,,,
+##
+NSCS_ISSUE-REISSUE - Chargers,n,vTIF,OAM,,,,,,
+#
+NSCS_ISSUE-REISSUE - Chargers,y,NeLS,OAM,,,,,,
+##
+NSCS_ISSUE-REISSUE - Chargers,n,vSAPC,OAM,,,,,,
+##
+NSCS_ISSUE-REISSUE_FH - Quarks,y,FRONTHAUL-6020,OAM,CMPv2_INITIAL,,,,,
+##
+NSCS_IKEV2_ISSUE_REISSUE - Skyfall,n,RadioNode,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+# Controller6610 - OAM
+NSCS_ISSUE-REISSUE - Aviators,y,Controller6610,OAM,,,,,,
+# Controller6610 - IPSEC
+NSCS_ISSUE-REISSUE - Aviators,y,Controller6610,IPSEC,,,,192.168.100.1,IP_ADDRESS,
+# SCU - OAM
+NSCS_ISSUE-REISSUE_SCU - Aviators,y,SCU,OAM,,,,,,
+# ESC - OAM
+NSCS_ISSUE-REISSUE_ESC - Aviators,y,ESC,OAM,,,,,,

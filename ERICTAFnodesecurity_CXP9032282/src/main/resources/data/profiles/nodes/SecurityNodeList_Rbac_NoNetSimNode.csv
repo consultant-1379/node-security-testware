@@ -1,0 +1,2 @@
+suiteProfile,nodeType,networkElementId,networkElementRange,ipAddress,sync,start,ossPrefix,port,transportType,buildNetsimObjects,platformType,ossModelIdentity
+maintrack,RadioNode,DespicableRadioNode,,172.16.16.16,,,"MeContext=DespicableRadioNode",6513,TLS,,,

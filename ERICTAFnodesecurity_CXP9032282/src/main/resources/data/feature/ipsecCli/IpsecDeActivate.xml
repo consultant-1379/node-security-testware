@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Nodes>
+<Node>
+<NodeFdn>%s</NodeFdn>
+<SubAltName>%s</SubAltName>
+<DisableOMConfiguration>
+<removeCert>false</removeCert>
+<dnsServer1>10.0.0.1</dnsServer1>
+<dnsServer2>10.0.0.2</dnsServer2>
+<ipAddressOaMOuter>%s</ipAddressOaMOuter>
+<defaultRouter0>10.10.10.1</defaultRouter0>
+<networkPrefixLength>23</networkPrefixLength>
+<remoteIpAddress>10.10.10.5</remoteIpAddress>
+<remoteIpAddressMask>20</remoteIpAddressMask>
+</DisableOMConfiguration>
+</Node>
+</Nodes> 

@@ -1,0 +1,14 @@
+suiteProfile,nodeType,networkElementId,ipAddress,ossPrefix,neProductVersion,ossModelIdentity,port,transportType,secureUserName,secureUserPassword
+maintrack,ERBS,LTEiscfOAM__posERBS00101,192.1.1.101,,,18.Q2-J.1.280,,,,
+maintrack,ERBS,LTEiscfIPSECposERBS00201,192.1.1.102,,,18.Q2-J.1.280,,,,
+maintrack,ERBS,LTEiscfCOMBOposERBS00301,192.1.1.103,,,18.Q2-J.1.280,,,,
+maintrack,RadioNode,LTEsecdataOAM_posRadio01,192.168.100.90,,,,6513,TLS,netsim,netsim
+#maintrack,RadioNode,LTEsecdataIPSEC_posRadio01,192.168.100.91,,,,6513,TLS,netsim,netsim
+#maintrack,RadioNode,LTEsecdataCOMBO_posRadio01,192.168.100.92,,,,6513,TLS,netsim,netsim
+#maintrack,MSRBS_V1,LTEsecdataOAM_pos_pRBS01,192.1.1.201,,,,6513,TLS,,
+#maintrack,MSRBS_V1,LTEsecdataIPSEC_pos_pRBS01,192.1.1.202,,,,6513,TLS,,
+#maintrack,MSRBS_V1,LTEsecdataCOMBO_pos_pRBS01,192.1.1.203,,,,6513,TLS,,
+#maintrack,Router6672,LTEsecdataOAM_pos_R6K01,192.1.1.203,,,,6513,TLS,,
+#maintrack,Router6672,LTEsecdataIPSEC_pos_R6K01,192.1.1.203,,,,6513,TLS,,
+#maintrack,Router6672,LTEsecdataCOMBO_pos_R6K01,192.1.1.203,,,,6513,TLS,,
+

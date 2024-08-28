@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUST_LAAD - Skyfall" parallel="false">
+    <test name="Setup Teardown TRUST LAAD Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrust"/>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestScenario">
+                <methods>
+                    <include name="trustDistribute_RemoveLAAD_CaName_Combined"/>
+                    <include name="trustDistributeLAAD_PositiveTest"/>
+                    <include name="trustDistribute_RemoveLAAD_IssuerDn_Combined"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

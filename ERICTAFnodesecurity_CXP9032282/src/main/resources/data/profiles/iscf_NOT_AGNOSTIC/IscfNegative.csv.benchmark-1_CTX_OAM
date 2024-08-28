@@ -1,0 +1,9 @@
+useCase,logicalName,nodeFdn,wantedSecLevel,minimumSecLevel,ipsecUserLabel,subjectAltName,subjectAltNameType,ipsecAreas,wantedEnrolMode,nodeType,mimVersion,expectedExceptionSubstring
+
+OAM,LOGICALiscfOAM__neg,"",2,1,,,,,SCEP,ERBS,E.1.49,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Node FDN cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00105,2,1,,,,,"",ERBS,E.1.49,"Enrollment Mode cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00106,2,1,,,,,SCEP,"",E.1.49,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00107,2,1,,,,,SCEP,ERBS,"","com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Null or empty MIM version"
+
+OAM,LOGICALiscfOAM__neg,"                      ",2,1,,,,,SCEP,ERBS,E.1.49,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Node FDN must not contain blank characters"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00115,2,1,,,,,"    ",ERBS,E.1.49,"Enrollment Mode not supported by node model: NOT_SUPPORTED"

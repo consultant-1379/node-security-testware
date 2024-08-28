@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_SL2 - Skyfall" parallel="false">
+    <test name="Setup Teardown SL1/SL2 Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioSl2"/>
+        </classes>
+    </test>
+    <test name="SL1/SL2 Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Sl2TestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

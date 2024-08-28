@@ -1,0 +1,3 @@
+moType,namespace,version,id,attributes
+NetworkFunctionVirtualizationOrchestrator,OSS_NE_DEF,1.0.0,nfvo1,"networkFunctionVirtualizationOrchestratorId=nfvo1,nfvoType=RNFVO"
+VirtualNetworkFunctionManager,OSS_NE_DEF,1.0.0,vnfm1,"virtualNetworkFunctionManagerId=vnfm1,vmType=RVNFM,tenants=[]"

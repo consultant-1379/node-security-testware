@@ -1,0 +1,4 @@
+suiteName,teamName,nodeOperatorType,nodeType,platformType,networkElementId,ipAddress,ossModelIdentity,ossPrefix,port,transportType,snmpAgentPort,snmpVersion,rootUserName,rootUserPassword,secureUserName,secureUserPassword,normalUserName,normalUserPassword,timeZone
+NSCS_HTTPS - Skyfall,Skyfall,NETSIM,RadioNode,,LTE98dg2ERBS00001,,,"SubNetwork=LTE98dg2ERBS00001",6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,
+NSCS_FTPES - Sunrise,Sunrise,NETSIM,ERBS,CPP,LTE02ERBS00009,192.168.100.45,,"MeContext=LTE02ERBS00009",,,,,netsim,netsim,netsim,netsim,netsim,netsim,
+NSCS_CRLCHECK - Skyfall,Skyfall,NETSIM,ERBS,CPP,LTE102ERBS00001,192.168.101.17,,"MeContext=LTE102ERBS00001",,,,,netsim,netsim,netsim,netsim,netsim,netsim,

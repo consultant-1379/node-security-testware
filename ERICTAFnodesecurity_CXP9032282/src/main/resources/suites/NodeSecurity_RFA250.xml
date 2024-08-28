@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Certificate Issue positive - Skyfall">
+
+    <parameter name="dataprovidername" value="nodesToAdd_RFA250"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="true"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateIssueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario">
+                <methods>
+                    <include name="certificateIssuePositive"/>
+                    <exclude name="certificateIssueNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,60 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+    <xs:element name="Nodes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Node" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element type="xs:string" name="NodeFdn">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Node name in any of these 2 format e.g. nodeName or NetworkElement=NetworkElementName
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element type="xs:string" name="EntityProfileName" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Entity profile name for the certificate. Optional field: if not present we'll use enrollment type previously
+                                        configured or the default value predefined for NodeType and CERT_TYPE IPSec/OAM.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element type="xs:string" name="SubjectAltName" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        The subject alternative name for the certificate. Mandatory in case of CERT_TYPE = IPSEC.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element type="xs:string" name="SubjectAltNameType" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        The subject alternative name type for the certificate. Mandatory in case of CERT_TYPE = IPSEC.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element type="xs:string" name="EnrollmentMode" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        The enrollment mode for the certificate. Optional field: if not present we'll use enrollment type previously
+                                        configured or the default value for the specified node type/node version.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element type="xs:string" name="KeySize" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        The keysize for the certificate. Optional field: if not present we'll use key size previously configured or
+                                        the default value for the specified node type/node version.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,2 @@
+certType,fileName,caName,expectedMessage
+OAM,,InvalidCA,"Error 10091"

@@ -1,0 +1,3 @@
+suiteProfile,nodeType,networkElementId,networkElementRange,ipAddress,sync,start,ossPrefix,port,transportType,buildNetsimObjects,platformType,ossModelIdentity
+
+maintrack,BSC,GSM01BSC01,,,sync,start,,830,SSH,,,BSC-G17.Q3-R1A02-APG43L-3.2.5-R3E

@@ -1,0 +1,2 @@
+expectedHttpStatus,expectedHttpResponse,developerMessage,additionalTestInfo
+400,SECURITY_VIOLATION_ERROR,"Make sure you have the requested rights"," - Verify ENM User cannot access to End-Point REST API without proper Role assigned"

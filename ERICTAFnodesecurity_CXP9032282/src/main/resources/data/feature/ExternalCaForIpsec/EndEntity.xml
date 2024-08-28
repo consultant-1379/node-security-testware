@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Entities>
+    <Entity>
+        <PublishCertificatetoTDPS>true</PublishCertificatetoTDPS>
+        <EntityProfile Name="DUSGen2IPSec_SAN_CHAIN_EP">
+        </EntityProfile>
+        <KeyGenerationAlgorithm Id="22">
+            <Name>RSA</Name>
+            <KeySize>2048</KeySize>
+            <Supported>true</Supported>
+        </KeyGenerationAlgorithm>
+        <Category>
+            <Name>NODE-IPSEC</Name>
+            <Modifiable>false</Modifiable>
+        </Category>
+        <EntityInfo>
+            <Name>%s-ipsec</Name>
+            <Subject>
+                <SubjectField>
+                    <Type>COMMON_NAME</Type>
+                    <Value>%s-ipsec</Value>
+                </SubjectField>
+                <SubjectField>
+                    <Type>COUNTRY_NAME</Type>
+                    <Value>SE</Value>
+                </SubjectField>
+                <SubjectField>
+                    <Type>ORGANIZATION</Type>
+                    <Value>ERICSSON</Value>
+                </SubjectField>
+                <SubjectField>
+                    <Type>ORGANIZATION_UNIT</Type>
+                    <Value>BUCI DUAC NAM</Value>
+                </SubjectField>
+            </Subject>
+            <SubjectAltName>
+                <Critical>false</Critical>
+                <SubjectAltNameField>
+                    <Type>IP_ADDRESS</Type>
+                    <Value xsi:type="SubjectAltNameString" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <StringValue>%s</StringValue>
+                    </Value>
+                </SubjectAltNameField>
+            </SubjectAltName>
+            <OTP>Ericsson@1</OTP>
+            <OTPCount>0</OTPCount>
+        </EntityInfo>
+        <OTPValidityPeriod>1</OTPValidityPeriod>
+    </Entity>
+</Entities>

@@ -1,0 +1,2 @@
+suiteProfile,entityProfile,command,expectedMsg
+extra,Despicable_Us_Pico_NEW_EPxx,"pkiadm pfm -d -type entity -n ","entity Profile with name Despicable_Us_Pico_NEW_EPxx successfully deleted"

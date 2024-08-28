@@ -1,0 +1,2 @@
+Ldap,profileFilter,tlsMode,userLabel,useTls,expectedMsgLdapSet
+1,ERICSSON_FILTER,LDAPS,Skyfall,true,"Error 10099 : Security violation exception"

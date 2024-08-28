@@ -1,0 +1,3 @@
+suiteProfile,testType,certType,caName,issuerDn,serialNumber,nodeindex
+maintrack,trustDistrCT_IPv4,OAM,ENM_Infrastructure_CA,,,erbs102
+maintrack,trustDistrCT_IPv6,IPSEC,NE_External_CA,,,erbs103

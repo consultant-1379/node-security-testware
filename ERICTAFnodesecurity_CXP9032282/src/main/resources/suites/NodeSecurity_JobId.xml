@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Job Id - The16thFloor">
+
+    <parameter name="dataprovidername" value="nodesToAdd_jobid"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!--     CERTIFICATE ISSUE SCENARIOS    -->
+    <!--     WITH JOBID					   -->
+    <test name="CertificateIssueWithJobIdScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.JobIdForCertificateIssueScenario"/>
+        </classes>
+    </test>
+
+    <!--     TRUST DISTRIBUTE SCENARIOS    -->
+    <!--     WITH JOBID					   -->
+    <test name="TrustDistributionWithJobIdScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.JobIdForTrustDistributeScenario"/>
+        </classes>
+    </test>
+
+    <!--     TRUST REMOVE SCENARIOS    -->
+    <!--     WITH JOBID				   -->
+    <test name="TrustRemoveWithJobIdScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.JobIdForTrustRemoveScenario"/>
+        </classes>
+    </test>
+</suite>

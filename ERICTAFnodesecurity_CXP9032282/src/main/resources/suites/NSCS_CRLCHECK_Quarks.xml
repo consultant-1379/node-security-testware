@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_CRLCHECK - Quarks" parallel="tests" preserve-order="true">
+    <test name="SetUp TearDown CrlCheck Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioCrlCheck"/>
+        </classes>
+    </test>
+    <test name="CrlCheck Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.CrlCheckTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

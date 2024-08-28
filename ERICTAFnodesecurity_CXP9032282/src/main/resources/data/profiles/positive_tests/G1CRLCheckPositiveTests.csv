@@ -1,0 +1,7 @@
+suiteProfile,testType,nodeindex,operation,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType,fileName,expectedMessage
+maintrack,crlCheck,erbs01,read,OAM,,,,,,,
+maintrack,crlCheck,erbs01,read,IPSEC,CMPv2_VC,,RSA_2048,www.iaktestNode89.com,DNS_NAME,,
+maintrack,crlCheck,erbs01,nonRead,ALL,,,,,,,
+maintrack,crlCheck,erbs03,read,OAM,,,,,,,
+maintrack,crlCheck,erbs03,read,IPSEC,CMPv2_VC,,RSA_2048,www.iaktestNode89.com,DNS_NAME,,
+maintrack,crlCheck,erbs03,nonRead,ALL,CMPv2_VC,,RSA_2048,www.iaktestNode89.com,DNS_NAME,,

@@ -1,0 +1,2 @@
+type,name,description,status,policy,assignedRoles
+custom,GenEnrollmentInfo_REST,Custom Role GenEnrollmentInfo_REST_TEST,ENABLED,"{""nodesec_domains_nbi"": [""create"", ""delete""]}",

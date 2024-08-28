@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rtselDeleteServerConfiguration>
+	<nodeRtselDetails>
+			<nodes>
+                     <nodeFdn>%s</nodeFdn>
+            </nodes>
+            <servers>
+					<serverName>SyslogServ1</serverName>
+            </servers>
+	</nodeRtselDetails>
+</rtselDeleteServerConfiguration>

@@ -1,0 +1,3 @@
+testCaseId,suiteProfile,testType,nodeindex,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType
+MR45732_Q2_Set_CRL_Check_IPSec_Positive_Secadm,maintrack,crlCheckDG2,radionode402,OAM,,,,,
+MR45732_Q2_Set_CRL_Check_IPSec_Positive_Secadm,maintrack,crlCheckDG2,radionode011,IPSEC,CMPv2_VC,,RSA_2048,www.iaktestNode89.com,DNS_NAME

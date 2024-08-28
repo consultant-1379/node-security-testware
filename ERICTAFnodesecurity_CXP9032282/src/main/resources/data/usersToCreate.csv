@@ -1,0 +1,5 @@
+username,firstName,lastName,email,password,enabled,roles
+CmuserNodeSecurity1,cmtest1_firstname,cmtest1_lastname,cmtest1@test.it,Cmuserpasswd_1,true,ADMINISTRATOR
+CmuserNodeSecurity2,cmtest2_firstname,cmtest2_lastname,cmtest2@test.it,Cmuserpasswd_2,true,OPERATOR
+CmuserNodeSecurity3,cmtest3_firstname,cmtest3_lastname,cmtest3@test.it,Cmuserpasswd_3,true,SECURITY_ADMIN
+CmuserNodeSecurity4,cmtest4_firstname,cmtest4_lastname,cmtest4@test.it,Cmuserpasswd_4,true,FIELD_TECHNICIAN

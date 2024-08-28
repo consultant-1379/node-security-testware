@@ -1,0 +1,2 @@
+username,firstName,lastName,email,password,enabled,roles,passwordResetFlag,timeout
+secUser16thFloor1,securityUser1,the16thFloor,secUser16thFloor1@test.it,secUserPasswd_1,true,ADMINISTRATOR,false,60

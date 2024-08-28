@@ -1,0 +1,25 @@
+suiteName,RFA250,nodeType,certType
+#,,,,,,
+# numbers of rows with column value nodeType have to be the same number of rows into nodesToAdd.csv for the same nodeTypes,,,,,,
+#,,,,,,
+##
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RadioNode,OAM
+"Agat_Security_PKI,Agat_Security_PKI_ARNL",y,RadioNode,IPSEC
+##
+NSCS_CRLCHECK - Skyfall,y,RadioNode,OAM
+NSCS_CRLCHECK - Skyfall,y,RadioNode,IPSEC
+##
+NSCS_CRLCHECK - Falcons,y,5GRadioNode,OAM
+NSCS_CRLCHECK - Falcons,y,5GRadioNode,IPSEC
+NSCS_CRLCHECK - Falcons,y,VTFRadioNode,OAM
+NSCS_CRLCHECK - Falcons,y,VTFRadioNode,IPSEC
+NSCS_CRLCHECK - Falcons,y,vPP,OAM
+NSCS_CRLCHECK - Falcons,y,vRC,OAM
+##
+NSCS_CRLCHECK - Quarks,y,Router6675,OAM
+NSCS_CRLCHECK - Quarks,y,Router6675,IPSEC
+##
+NSCS_CRLCHECK_FH - Quarks,y,FRONTHAUL-6020,OAM
+##
+NSCS_CRLCHECK - Aviators,y,Controller6610,OAM
+NSCS_CRLCHECK - Aviators,y,Controller6610,IPSEC

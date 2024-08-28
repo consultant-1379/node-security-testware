@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_RTSEL - Sunrise"  parallel="false" preserve-order="true">
+    <test name="SetUp TearDown RtSel">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioRtSel"/>
+        </classes>
+    </test>
+    <test name="RtSel Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.RtSelTestScenario">
+                <methods>
+                    <include name="activeRtSelPositive"/>
+                    <include name="deactivateRtSelPositive"/>
+                    <include name="deleteRtSelPositive"/>
+                    <include name="activeRtSelNegative"/>
+                    <include name="deactivateRtSelNegative"/>
+                    <include name="deleteRtSelNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

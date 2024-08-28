@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Security_PKI_SL2 SPEC: SL2 OFF" parallel="false">
+    <test name="Setup Teardown SL1/SL2 Test - ARNL">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioSl2"/>
+        </classes>
+    </test>
+    <test name="SL1/SL2 Test - ARNL" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Sl2TestScenario">
+                <methods>
+                    <exclude name="sl2Activation"/>
+                    <include name="sl2DeActivation"/>
+                    <exclude name="sl2ActivationWrongUser"/>
+                    <exclude name="sl2DeActivationWrongUser"/>
+                    <exclude name="sl2GetMultiNodes"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,5 @@
+context,username,firstName,lastName,email,password,enabled,roles,authMode
+2,rememarccr,rememarccr_firstname,rememarccr_lastname,rememarccr@test.it,TestPassw0rd,true,OPERATOR,local
+2,remelucvo,remelucvo_firstname,remelucvo_lastname,remelucvo@test.it,TestPassw0rd,true,OPERATOR,local
+1,rememarccr,rememarccr_firstname,rememarccr_lastname,rememarccr@test.it,TestPassw0rd,true,OPERATOR,remote
+1,remelucvo,remelucvo_firstname,remelucvo_lastname,remelucvo@test.it,TestPassw0rd,true,OPERATOR,remote

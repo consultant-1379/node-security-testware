@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Nodes>
+    <Node>
+        <NodeFdn>%s</NodeFdn>
+        <EntityProfileName>MicroRBSOAM_EP</EntityProfileName>
+        <EnrollmentMode>CMPv2_INITIAL</EnrollmentMode>
+        <KeySize>RSA_2048</KeySize>
+    </Node>
+</Nodes>

@@ -1,0 +1,3 @@
+operation,expectedMessageUnauthorized,shouldPass,shortDescription
+Who,"",true,shouldpassforCppUser1
+Who,"Not enough credentials",false,shouldnotpassforCppUser2

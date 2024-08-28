@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_LOCAL_RBAC - DespicableUS" parallel="false">
+    <test name="Setup Teardown Local Rbac Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioLocalRbac"/>
+        </classes>
+    </test>
+    <test name="Local Rbac Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.LocalRbacTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProfilesSchema.xsd">
+
+    <CertificateProfile Name="SLS_USER_CP">
+        <ProfileValidity>2022-05-30</ProfileValidity>
+        <Modifiable>true</Modifiable>
+        <ForCAEntity>false</ForCAEntity>
+        <Version>V3</Version>
+        <SignatureAlgorithm>
+            <Name>SHA256withRSA</Name>
+        </SignatureAlgorithm>
+        <KeyGenerationAlgorithm>
+            <Name>RSA</Name>
+            <KeySize>2048</KeySize>
+        </KeyGenerationAlgorithm>
+        <CertificateValidity>P2Y</CertificateValidity>
+        <Issuer>
+            <CertificateAuthority>
+                <Name>ENM_UI_CA</Name>
+            </CertificateAuthority>
+        </Issuer>
+        <SubjectUniqueIdentifier>true</SubjectUniqueIdentifier>
+        <IssuerUniqueIdentifier>false</IssuerUniqueIdentifier>
+        <SkewCertificateTime>PT50M</SkewCertificateTime>
+        <CertificateExtensions>
+            <CertificateExtension xsi:type="AuthorityInformationAccess">
+                <Critical>false</Critical>
+                <AccessDescription>
+                    <AccessMethod>CA_ISSUER</AccessMethod>
+                    <AccessLocation>ldap://ldap.example.com/dc=example,dc=com?postalAddress</AccessLocation>
+                </AccessDescription>
+                <AccessDescription>
+                    <AccessMethod>OCSP</AccessMethod>
+                </AccessDescription>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="ExtendedKeyUsage">
+                <Critical>false</Critical>
+                <SupportedKeyPurposeId>ID_KP_EMAIL_PROTECTION</SupportedKeyPurposeId>
+                <SupportedKeyPurposeId>ID_KP_TIME_STAMPING</SupportedKeyPurposeId>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="AuthorityKeyIdentifier">
+                <Critical>false</Critical>
+                <AuthorityKeyIdentifierType>SUBJECT_KEY_IDENTIFIER</AuthorityKeyIdentifierType>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="CRLDistributionPoints">
+                <Critical>false</Critical>
+                <DistributionPoint>
+                    <DistributionPointName>
+                        <FullName>http://$FQDN_IPV4/pki-cdps?ca_name=$CANAME&amp;ca_cert_serialnumber=$CACERTSERIALNUMBER</FullName>
+                    </DistributionPointName>
+                    <ReasonFlag>CA_COMPROMISE</ReasonFlag>
+                </DistributionPoint>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="BasicConstraints">
+                <Critical>true</Critical>
+                <IsCA>false</IsCA>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="SubjectKeyIdentifier">
+                <Critical>false</Critical>
+                <KeyIdentifier>
+                    <Algorithm>
+                        <Name>160-BIT_SHA-1</Name>
+                    </Algorithm>
+                </KeyIdentifier>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="KeyUsage">
+                <Critical>true</Critical>
+                <SupportedKeyUsageType>NON_REPUDIATION</SupportedKeyUsageType>
+                <SupportedKeyUsageType>DATA_ENCIPHERMENT</SupportedKeyUsageType>
+            </CertificateExtension>
+            <CertificateExtension xsi:type="SubjectAltName">
+                <Critical>true</Critical>
+                <SubjectAltNameField>
+                    <Type>DIRECTORY_NAME</Type>
+                </SubjectAltNameField>
+            </CertificateExtension>
+        </CertificateExtensions>
+        <SubjectCapabilities>
+            <SubjectField>
+                <Type>COMMON_NAME</Type>
+            </SubjectField>
+        </SubjectCapabilities>
+    </CertificateProfile>
+</Profiles>

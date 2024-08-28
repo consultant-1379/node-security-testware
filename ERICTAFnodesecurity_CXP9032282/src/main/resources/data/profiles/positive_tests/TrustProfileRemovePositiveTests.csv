@@ -1,0 +1,2 @@
+suiteProfile,trustProfile,command,expectedMsg
+extra,Despicable_Us_TrustProfile,"pkiadm pfm -d -type trust -n ","trust Profile with name Despicable_Us_TrustProfile successfully deleted"

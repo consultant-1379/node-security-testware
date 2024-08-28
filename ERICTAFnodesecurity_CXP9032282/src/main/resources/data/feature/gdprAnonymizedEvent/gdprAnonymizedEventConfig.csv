@@ -1,0 +1,2 @@
+RncFeature,filter
+AnonymizedEventData,"%s AND featureState AND PRIVACY.ANONYMIZED AND %s"

@@ -1,0 +1,2 @@
+testCaseId,suiteProfile,testType,nodeindex,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType
+MR37990_Q2_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueByProfileBsc,bsc001,OAM,CMPv2_INITIAL,,,,

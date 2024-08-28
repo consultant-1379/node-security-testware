@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_ISSUE-REISSUE - Skyfall" parallel="false">
+    <parameter name="get_MOs_for_debug_purpose" value="true"/>
+    <test name="Setup Teardown ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueReIssue"/>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+                <methods>
+                    <include name="issueOAMPositiveTest"/>
+                    <include name="issueIPSECPositiveTest"/>
+                    <include name="reIssueOAMCertTypePositiveTest"/>
+                    <include name="reIssueIPSECCertTypePositiveTest"/>
+                    <include name="reIssueOAMCaNamePositiveTest"/>
+                    <include name="reIssueIPSECCaNamePositiveTest"/>
+                    <include name="issueOAMNegativeTest"/>
+                    <exclude name="issueIPSECNegativeTest"/>
+                    <include name="reIssueOAMCertTypeNegativeTest"/>
+                    <exclude name="reIssueIPSECCertTypeNegativeTest"/>
+                    <exclude name="reIssueOAMCaNameNegativeTest"/>
+                    <exclude name="reIssueIPSECCaNameNegativeTest"/>
+                    <include name="issueReIssueNegativeSyntax"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

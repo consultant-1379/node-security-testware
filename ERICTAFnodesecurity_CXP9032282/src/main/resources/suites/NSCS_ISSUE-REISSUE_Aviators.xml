@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_ISSUE-REISSUE - Aviators" parallel="false">
+    <test name="Setup Teardown ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueReIssue"/>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

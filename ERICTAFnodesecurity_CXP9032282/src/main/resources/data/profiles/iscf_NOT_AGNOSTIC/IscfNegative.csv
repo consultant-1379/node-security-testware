@@ -1,0 +1,84 @@
+useCase,logicalName,nodeFdn,wantedSecLevel,minimumSecLevel,ipsecUserLabel,subjectAltName,subjectAltNameType,ipsecAreas,wantedEnrolMode,nodeType,mimVersion,expectedExceptionSubstring
+
+
+OAM,LOGICALiscfOAM__neg,"",2,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong FDN[null]"
+
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00105,2,1,,,,,"",ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong Enrollment Mode[null]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00106,2,1,,,,,SCEP,"",E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong Node Model Information[null]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00107,2,1,,,,,SCEP,ERBS,"","com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong model identifier[null]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00108,2,1,,,,,ONLINE_SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wanted Enrollment Mode[ONLINE_SCEP] not supported for NE type[ERBS]"
+
+
+
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00115,2,1,,,,,    ,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wanted Enrollment Mode[NOT_SUPPORTED] not supported for NE type[ERBS]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00116,2,1,,,,,SCEP,    ,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: node type[    ] not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00117,2,1,,,,,SCEP,ERBS,      ,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong MIM version[      ]"
+
+
+
+
+
+
+
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00141,2,1,,,,,SCEP,CPP,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: node type[CPP] not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00142,2,1,,,,,SCEP,MSRbs_V1,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: node type[MSRbs_V1] not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00143,2,1,,,,,SCEP,SGSN-MME,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: node type[SGSN-MME] not supporting certificate management"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00144,2,1,,,,,SCEP,ERBS,e.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong MIM version[e.1.239]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00145,2,1,,,,,SCEP,ERBS,E.149,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong MIM version[E.149]"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00146,2,1,,,,,SCEP,ERBS,"E,1.49","com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong MIM version[E,1.49]"
+
+
+
+
+
+
+
+
+
+
+
+IPSec,LOGICALiscfIPSECneg,"",,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong FDN[null]"
+
+
+
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,"",ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong Enrollment Mode[null]"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00208,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,"",E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong Node Model Information[null]"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00209,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,"","com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong model identifier[null]"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,2001:0db8:85a3:0042:1000:8a2e:0370:7334,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv4 address"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,gerrit.ericsson.se,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv4 address"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,1.2.3.4,IPV6,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv6 address"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,gerrit.ericsson.se,IPV6,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv6 address"
+
+
+
+
+
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00217,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,    ,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wanted Enrollment Mode[NOT_SUPPORTED] not supported for NE type[ERBS]"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00219,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,      ,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: Wrong MIM version[      ]"
+
+
+
+
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00281,,,LABELiscfIPSECnegLongerThan128Characters12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: User Label too long"
+
+
+
+
+
+
+
+
+
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00381,2,1,LABELiscfCOMBOnegLongerThan128Characters12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: User Label too long"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00381,2,1,LABELiscfCOMBOneg,1.2.3.4,IPV6,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv6 address"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00381,2,1,LABELiscfCOMBOneg,2001:0db8:85a3:0042:1000:8a2e:0370:7334,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv4 address"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00381,2,1,LABELiscfCOMBOneg,gerrit.ericsson.se,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv4 address"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00381,2,1,LABELiscfCOMBOneg,gerrit.ericsson.se,IPV6,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.api.exception.IscfServiceException: subjectAltNameData is not valid IPv6 address"

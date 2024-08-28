@@ -1,0 +1,2 @@
+certType,fileName,caName,expectedMessage
+InvalidCT,,ENM_E-mail_CA,"Error 10091"

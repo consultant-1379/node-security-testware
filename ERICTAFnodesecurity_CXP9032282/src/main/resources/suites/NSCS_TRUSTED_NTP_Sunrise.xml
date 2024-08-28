@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUSTED_NTP - Sunrise" parallel="false">
+	<test name="Setup and TearDown Trusted Ntp Test">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrustedNtp"/>
+		</classes>
+	</test>
+	<test name="TRUSTED NTP TEST SCENARIO" preserve-order="false">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustedNtpTestScenario">
+			</class>
+	    </classes>
+	</test>
+</suite>

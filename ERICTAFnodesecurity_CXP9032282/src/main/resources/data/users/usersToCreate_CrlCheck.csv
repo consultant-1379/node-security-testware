@@ -1,0 +1,3 @@
+username,firstName,lastName,email,password,passwordResetFlag,enabled,timeout,roles
+CrlCheckNodeSecurity1,cmtest1_firstname,cmtest1_lastname,cmtest1@test.it,Cmuserpasswd_1,false,true,60,NodeSecurity_Operator
+CrlCheckNodeSecurity2,cmtest2_firstname,cmtest2_lastname,cmtest2@test.it,Cmuserpasswd_2,false,true,60,NodeSecurity_Administrator

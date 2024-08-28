@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TLSv1.2Support - Vulcanians" parallel="tests">
+	<test name="Setup Teardown for TLS version update">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTLSversion"/>
+		</classes>
+	</test>
+	<test name="Support_For_TLSv_Scenario" preserve-order="false">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SupportForTLS1_2TestScenario">
+				<methods>
+					<include name="sl2Activation_Tls" />
+					<include name="sl2DeActivation_Tls" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

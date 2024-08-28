@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUST - Falcons" parallel="false">
+    <test name="Setup Teardown TRUST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrust"/>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestAgatScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

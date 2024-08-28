@@ -1,0 +1,3 @@
+context,suiteProfile,nodeType,networkElementId,ipAddress,ossPrefix,neProductVersion,ossModelIdentity,port,transportType,nodeOperatorType
+cpp,maintrack,ERBS,LTECredApiERBS00102,192.1.2.203,,,19.Q3-J.4.50,,,NETSIM
+ecim,maintrack,RadioNode,LTECredApiRadio00002,192.168.101.191,,,,6513,TLS,NETSIM

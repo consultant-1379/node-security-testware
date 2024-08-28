@@ -1,0 +1,5 @@
+username,firstName,lastName,email,password,enabled,roles
+CmuserFGV1,cmtest1_firstname,cmtest1_lastname,cmtest1@test.it,Cmuserpasswd_1,true,ADMINISTRATOR
+CmuserFGV2,cmtest2_firstname,cmtest2_lastname,cmtest2@test.it,Cmuserpasswd_2,true,OPERATOR
+FmuserFGV1,fmtest1_firstname,fmtest1_lastname,fmuser1@test.it,Fmuserpasswd_1,false,ADMINISTRATOR
+FmuserFGV2,fmtest2_firstname,fmtest2_lastname,fmuser1@test.it,Fmuserpasswd_2,false,OPERATOR

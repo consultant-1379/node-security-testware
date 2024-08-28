@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_SSO_FH - Quarks" parallel="tests" preserve-order="true">
+    <test name="SetUp TearDown Sso Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioSso"/>
+        </classes>
+    </test>
+    <test name="Sso Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SsoTestScenario">
+                <methods>
+                    <include name="enableSsoPositive"/>
+                    <include name="disableSsoPositive"/>
+                    <include name="enableSsoNegative"/>
+                    <include name="disableSsoNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

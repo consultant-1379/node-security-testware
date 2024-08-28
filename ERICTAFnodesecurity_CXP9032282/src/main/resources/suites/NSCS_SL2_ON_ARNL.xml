@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_SL2 - Skyfall SPEC: SL2 ON" parallel="false">
+    <test name="Setup Teardown SL1/SL2 Test - ARNL">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioSl2"/>
+        </classes>
+    </test>
+    <test name="SL1/SL2 Test - ARNL" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Sl2TestScenario">
+                <methods>
+                    <include name="sl2Activation"/>
+                    <exclude name="sl2DeActivation"/>
+                    <exclude name="sl2ActivationWrongUser"/>
+                    <exclude name="sl2DeActivationWrongUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

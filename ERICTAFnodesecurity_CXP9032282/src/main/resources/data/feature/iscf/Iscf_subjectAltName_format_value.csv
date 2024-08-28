@@ -1,0 +1,3 @@
+subjectAltNameFormat,subjectAltNameValue,expectedSubjectAltNameType,additionalTestInfo
+IPV4,192.168.103.252,1," - subjectAltNameParam IPV4"
+IPV6,"2002:0db5:85a1:0001:1317:8a2f:0377:7309",3," - subjectAltNameParam IPV6"

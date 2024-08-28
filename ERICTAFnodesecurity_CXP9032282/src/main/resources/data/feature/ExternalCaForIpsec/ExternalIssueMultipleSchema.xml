@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnrollmentDetails>
+    <nodeEnrollmentDetails>
+        <Nodes>%s</Nodes>
+        <!-- Optional, mandatory for ext ca -->
+        <externalCAEnrollmentInfo>
+            <externalCAEnrollmentDetails>
+                <certificateAuthorityDn>CN=NE_IPsec_CA,OU=BUCI_DUAC_NAM,O=ERICSSON,C=SE</certificateAuthorityDn> <!-- mandatory-->
+                <caCertificate>%s</caCertificate> <!-- mandatory --> <!-- will be provided in base64 format -->
+                <enrollmentServerUrl>%s</enrollmentServerUrl> <!-- mandatory -->
+            </externalCAEnrollmentDetails>
+        </externalCAEnrollmentInfo>
+    </nodeEnrollmentDetails>
+</EnrollmentDetails>

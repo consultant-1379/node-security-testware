@@ -1,0 +1,108 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_GAT - Skyfall">
+
+    <!-- SETUP ENVIRONMENT -->
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- CRED SCENARIOS -->
+
+    <test name="CredentialScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CredentialsScenario">
+                <methods>
+                    <include name="credentialPositive"/>
+                    <exclude name="credentialNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="GetCredentialsScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.GetCredentialsScenario">
+                <methods>
+                    <include name="getCredentialsPositive"/>
+                    <exclude name="getCredentialslNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- KEYGEN SCENARIOS -->
+
+    <!-- SshKeyScenario removed from this suite. it doesn't work - use NSCS_SSHKEY_Skyfall.xml -->
+<!--
+    <test name="KeygenScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SshKeyScenario">
+                <methods>
+                    <include name="sshKeyPositive"/>
+                    <exclude name="sshKeyNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+-->
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateIssueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario">
+                <methods>
+                    <include name="certificateIssuePositive"/>
+                    <exclude name="certificateIssueNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- CERTIFICATE REISSUE SCENARIOS -->
+
+    <test name="CertificateReissueScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateReissueScenario">
+                <methods>
+                    <include name="certificateReissuePositive"/>
+                    <exclude name="certificateReissueNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- TRUST DISTRIBUTE SCENARIOS -->
+
+    <test name="TrustDistributeScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustDistributeScenario">
+                <methods>
+                    <include name="trustDistributePositiveCertType"/>
+                    <include name="trustDistributePositiveCaName"/>
+                    <exclude name="trustDistributeNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="TrustRemoveScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustRemoveScenario">
+                <methods>
+                    <include name="trustRemovePositiveIsdn"/>
+                    <include name="trustRemovePositiveCaName"/>
+                    <exclude name="trustRemoveNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

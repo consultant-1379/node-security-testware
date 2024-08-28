@@ -1,0 +1,14 @@
+logicalName,nodeFdn,wantedSecLevel,minimumSecLevel,ipsecUserLabel,subjectAltName,subjectAltNameType,ipsecAreas,wantedEnrolMode,nodeType,mimVersion,ossIdentifier,expectedKeyLength,expectedEnrolMode,expectedDistinguishedName,expectedCertificateAuthorityDn,expectedKeyLength2,expectedEnrolMode2,expectedDistinguishedName2,expectedCertificateAuthorityDn2
+
+LOGICALiscfOAM__pos,LTEiscfOAM__posERBS00101,2,1,,,,,SCEP,ERBS,5.1.63,,1,0,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfOAM__posERBS00101-oam","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_OAM_CA",,,,
+
+LOGICALiscfIPSECpos,MeContext=LTEiscfIPSECposERBS00201,,,LABELiscfIPSECpos,1.2.3.4,IPV4,OM,SCEP,ERBS,5.1.63,,1,0,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfIPSECposERBS00201-ipsec","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_IPsec_CA",,,,
+
+LOGICALiscfCOMBOpos,LTEiscfCOMBOposERBS00301,2,1,LABELiscfCOMBOCpos,1.2.3.4,IPV4,OM,SCEP,ERBS,5.1.63,,1,0,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfCOMBOposERBS00301-oam","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_OAM_CA",1,0,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfCOMBOposERBS00301-ipsec","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_IPsec_CA"
+
+,LTEsecdataOAM_posRadio01,,,,,,,CMPv2_VC,RadioNode,,16B-R28GY,RSA_2048,CMP,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfCOMBOposERBS00301-oam","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_OAM_CA",,,,
+
+,LTEsecdataIPSEC_posRadio01,,,,1.2.3.4,IPV4,,CMPv2_VC,RadioNode,,16B-R28GY,RSA_2048,CMP,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfIPSECposERBS00201-ipsec","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_IPsec_CA",,,,
+
+,LTEsecdataCOMBO_posRadio01,,,,1.2.3.4,IPV4,,CMPv2_VC,RadioNode,,16B-R28GY,RSA_2048,CMP,"OU=BUCI DUAC NAM,C=SE,O=ERICSSON,CN=LTEiscfIPSECposERBS00201-ipsec","C=SE, O=ERICSSON, OU=BUCI_DUAC_NAM, CN=NE_IPsec_CA",,,,
+

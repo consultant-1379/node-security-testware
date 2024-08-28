@@ -1,0 +1,30 @@
+context,methodRest,expectedHttpStatus,expectedHttpResponse,pathParamNodeFormat,ipFamily,additionalTestInfo
+
+### POST – all nodes included in ADDED_NODES DataSource
+1,POST,200,,$nodeName,default, - POST rest invoked having path parameter nodeName=<nodename>
+
+### POST – all nodes included in ADDED_NODES DataSource
+2,POST,200,,NetworkElement=$nodeName,default, - POST rest invoked having path parameter nodeName = <NetworkElement=nodename>
+
+### POST – Shared-CNF ConnectivityInformation IPv4 – ipFamily INET6
+3,POST,200,,$nodeName,INET6, - POST rest invoked having path parameter nodeName=<nodename> and query param ipFamily=INET6
+
+### POST – Shared-CNF ConnectivityInformation IPv6 – ipFamily INET
+4,POST,200,,$nodeName,INET, - POST rest invoked having path parameter nodeName=<nodename> and query param ipFamily=INET
+
+### DELETE Shared-CNF ConnectivityInformation IPv4
+5,DELETE,200,,$nodeName,default, - DELETE rest invoked having path parameter nodeName=<nodename>
+5,DELETE,404,,NetworkElement=$nodeName,default, - DELETE rest invoked having path parameters nodeName=<NetworkElement=nodename>
+6,DELETE,200,,NetworkElement=$nodeName,default, - DELETE rest invoked having path parameters nodeName=<NetworkElement=nodename>
+
+### RBAC – POST/DELETE  Shared-CNF Node ConnectivityInformation IPv4
+7,POST,403,Security violation exception,$nodeName,default, - POST rest - User NOT having authorization capability
+7,DELETE,403,Security violation exception,$nodeName,default, - DELETE rest - User NOT having authorization capability
+
+### POST/DELETE invalid nodeResource
+8,POST,400,The node specified does not exist,$nodeName,default, - POST rest - Not existing node
+9,DELETE,400,The node specified does not exist,$nodeName,default, - DELETE rest - Not existing node
+
+### POST/DELETE – Shared-CNF ConnectivityInformation IPv4 without NetworkElementSecurity MO defined
+10,POST,400,The node specified requires the node credentials to be defined,$nodeName,default, - POST rest - Node having NetworkElementSecurity MO undefined
+11,DELETE,400,The node specified requires the node credentials to be defined,$nodeName,default, - DELETE rest - Node having NetworkElementSecurity MO undefined

@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_IKEV2_ISSUE_REISSUE - Skyfall" parallel="false">
+    <test name="Setup Teardown IKEV2 ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueReIssue"/>
+        </classes>
+    </test>
+    <test name="Read And Update IKEV2 PIBPARAM Before ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Ikev2PibUpdateTestScenario">
+                <methods>
+                    <include name="updateIkev2PibBeforeTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+                <methods>
+                    <include name="issueIPSECPositiveTest"/>
+                    <include name="reIssueIPSECCertTypePositiveTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Read And Update IKEV2 PIBPARAM After ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Ikev2PibUpdateTestScenario">
+                <methods>
+                    <include name="updateIkev2PibAfterTests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

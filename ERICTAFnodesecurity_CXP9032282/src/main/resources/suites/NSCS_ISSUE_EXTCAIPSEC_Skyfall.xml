@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_ISSUE_EXTCAIPSEC - Skyfall" parallel="false">
+	<parameter name="get_MOs_for_debug_purpose" value="true"/>
+	<test name="Setup and TearDown External CA Issue Test">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueExtCaIpsec"/>
+		</classes>
+	</test>
+	<test name="External CA Issue test" preserve-order="false">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueExtCaIpsecTestScenario">
+			</class>
+	    </classes>
+	</test>
+</suite>

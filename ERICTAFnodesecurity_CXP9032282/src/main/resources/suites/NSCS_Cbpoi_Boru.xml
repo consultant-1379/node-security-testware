@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_Cbpoi - Boru" parallel="false">
+    <test name="Setup Teardown Cbpoi node">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioCbpoiNode"/>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+                <methods>
+                    <include name="issueOAMPositiveTest"/>
+                    <include name="reIssueOAMCertTypePositiveTest"/>
+                    <include name="reIssueOAMCaNamePositiveTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestScenario">
+                <methods>
+                    <include name="trustDistributeOAM_PositiveTest"/>
+                    <include name="trustDistribute_RemoveOAM_CaName_Combined_CbpoiNode"/>
+                    <include name="trustDistribute_RemoveOAM_IssuerDn_Combined"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="LDAP Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.LdapTestScenarioCbpoiNode">
+            </class>
+        </classes>
+    </test>
+</suite>

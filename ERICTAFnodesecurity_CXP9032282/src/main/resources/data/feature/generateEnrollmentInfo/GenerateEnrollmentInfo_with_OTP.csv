@@ -1,0 +1,12 @@
+context,fileName,expectedMessage,OTPCount,OTPValidityPeriod,expected_OTPCount,expected_OTPValidityPeriod,additionalTestInfo,ipVersion,expectedCertificateType,expectedNodeCredentialId,expectedEnrollmentServerGroupId,expectedEnrollmentServerId,expectedEnrollmentAuthority,expectedCacerts,expectedTrustedCerts,expectedTrustedCertsSize
+### Node configured with ConnectivityInformation in IPv4,,,,,,,,,,,,,,,,
+1,GenerateEnrollmentInfo.xml,successfully,,,default,default, with default xml,INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+1,GenerateEnrollmentInfo.xml,successfully,3,60,3,60, providing OTPCount and OTPValidityPeriod parameters,INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+1,GenerateEnrollmentInfo.xml,successfully,,1440,default,1440, providing OTPValidityPeriod parameter only,INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+1,GenerateEnrollmentInfo.xml,successfully,25,,25,1440, providing OTPCount parameter only,INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+1,GenerateEnrollmentInfo.xml,successfully,,-1,default,-1, providing OTPValidityPeriod parameter only [value = -1],INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+1,GenerateEnrollmentInfo.xml,successfully,,43200,default,43200, providing OTPValidityPeriod parameter only [value = 43200],INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+########## NOTE : below keeps the OTPValidityPeriod --> 43200 provided in the previous test ##########,,,,,,,,,,,,,,,,
+1,GenerateEnrollmentInfo.xml,successfully,,,default,43200, providing ipVersion parameter only [value = INET6],INET6,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4
+### Node configured with ConnectivityInformation in IPv6,,,,,,,,,,,,,,,,
+2,GenerateEnrollmentInfo.xml,successfully,,,default,default, providing ipVersion parameter only [value = INET],INET,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,4

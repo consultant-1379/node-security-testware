@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProfilesSchema.xsd">
+    <TrustProfile Name="Despicable_Us_TrustProfile">
+        <ProfileValidity>2111-03-01</ProfileValidity>
+        <Modifiable>true</Modifiable>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>ENM_E-mail_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>NE_External_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>ENM_PKI_Root_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+    </TrustProfile>
+</Profiles> 

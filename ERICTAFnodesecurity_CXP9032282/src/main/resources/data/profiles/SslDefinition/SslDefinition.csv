@@ -1,0 +1,13 @@
+suiteProfile,sslDefinitionName,sslDefinitionNodeNames,sslDefinitionDescr,sslDefinitionClientVerify,sslDefinitionClientDepth,sslDefinitionServerVerify,sslDefinitionServerDepth,sslDefinitionProtocolVersion,sslDefinitionClientCertFile,sslDefinitionClientCACertFile,sslDefinitionClientKeyFile,sslDefinitionClientPassword,sslDefinitionServerCertFile,sslDefinitionServerCACertFile,sslDefinitionServerKeyFile,sslDefinitionServerPassword
+maintrack,SkyfallNSCS01,"LTE01ERBS00042;LTE01ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+maintrack,SkyfallNSCS02,"LTE02ERBS00042;LTE02ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+skipmaintrack,SkyfallNSCS03,"LTE03ERBS00042;LTE03ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+skipmaintrack,SkyfallNSCS04,"LTE04ERBS00042;LTE04ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+skipmaintrack,SkyfallNSCS05,"LTE05ERBS00042;LTE05ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+skipmaintrack,SkyfallNSCS06,"LTE06ERBS00042;LTE06ERBS00150",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+
+extra,SkyfallNSCS01,"LTE02ERBS00080@@@LTE02ERBS00086",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+extra,SkyfallNSCS01,"LTE02ERBS00155@@@LTE02ERBS00160",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+
+setup,SkyfallNSCS01,"LTE01ERBS00080@@@LTE01ERBS00086",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc
+setup,SkyfallNSCS01,"LTE01ERBS00151@@@LTE01ERBS00157",SkyfallSslDefinitionTAF,0,1,0,1,"sslv2|sslv3|tlsv1",certificate1.crt,certificate1.crt,privateKey1.key,abc,certificate1.crt,certificate1.crt,privateKey1.key,abc

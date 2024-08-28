@@ -1,0 +1,2 @@
+fileName,certType,useExtCa
+ExternalIssueMultipleSchema.xml,IPSEC,true

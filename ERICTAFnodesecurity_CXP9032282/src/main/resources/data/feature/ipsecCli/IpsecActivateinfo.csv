@@ -1,0 +1,2 @@
+fileName,operation,statusFile,ipsecStatus
+IpsecActivateConfig1.xml,ACTIVATE,IpsecNodes.txt,ACTIVATED

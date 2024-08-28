@@ -1,0 +1,32 @@
+command,purpose,expectedMessage
+"secadm trust distribute",no command mandatory parameters,Error 10001
+"secadm trust distribute --certtype IPSEC",missing mandatory parameter --nodefile or --nodelist,Error 10001
+"secadm trust distribute --nodelist node1,node2,NetworkElement=node5,MeContext=node4",missing mandatory parameter --certtype,Error 10001
+"secadm trust distribute -certtype IPSEC --nodelist node1,node2,NetworkElement=node5,MeContext=node4",command syntax error -certtype,Error 10001
+"secadm trust distribute --certtype IPSEC -nodelist node1,node2",command syntax error -nodelist,Error 10001
+"secadm trust distribute -ct IPSEC --nodefile nodefile:abc.txt",command syntax error --nodefile nodefile,Error 10001
+"secadm trust distribute -ct IPSEC -n node1 node2",invalid value for -n,Error 10001
+"secadm trust distribute -ct IPSEC --certtype OAM -n node1",-ct double param,Error 10001
+"secadm trust distribute -n node1 -ct OAM",reverse order error,Error 10001
+"secadm trust distribute --ca CA_TEST",invalid -ca param,Error 10001
+"secadm trust distribute -ca CA_TEST -nodelist",invalid --nodelist param,Error 10001
+"secadm trust distribute -ca CA_TEST1 CA_TEST2",invalid -ca list,Error 10001
+"secadm trust distribute -ca CA_TEST1 CA_TEST2 --nodelist node1",invalid -ca list,Error 10001
+"secadm trust distribute -ca CA_TEST1 -ca CA_TEST2",invalid double -ca param,Error 10001
+"secadm trust distribute -ca CA_TEST --nodelist node1,node2 -n node3",invalid double --nodelist param,Error 10001
+"secadm trust distribute --nodelist node1 -ca CA_TEST",reverse order syntax error,Error 10001
+#
+# the here below syntax error commands should return "Error 6007" as compliance when performed by ENM cli.
+# the error compliance returned by TAF sending the commands via RestImpl (bypassing ENM cli) is "Error 10001".
+#
+#
+"secadm trust distribute --nodefile file:abc.txt -ca CA_TEST",reverse order syntax error,Error 10001
+"secadm trust distribute -ca CA_TEST --nodefile file:abc.txt --nodelist node1",invalid --nodefile --nodelist,Error 10001
+"secadm trust distribute -ca CA_TEST --nodefile file:abc.txt -nf file:efg.txt",invalid double --nodefile param,Error 10001
+"secadm trust distribute -ca CA_TEST -nff file:abc.txt",command syntax error -nff,Error 10001
+"secadm trust distribute -ca CA_TEST -nodefile file:abc",invalid --nodefile param,Error 10001
+"secadm trust distribute -ct IPSEC -nff file:abc.txt",command syntax error -nff,Error 10001
+"secadm trust distribute -ctt IPSEC --nodefile file:abc.txt",command syntax error -ctt,Error 10001
+"secadm trust distribute --certtype IPSEC -nodefile file:abc.txt",command syntax error -nodefile,Error 10001
+"secadm trust distribute -certtype IPSEC --nodefile file:abc.txt",command syntax error -certtype,Error 10001
+"secadm trust distribute '--nodefile file:abc.xml'",missing mandatory parameter --certtype,Error 10001

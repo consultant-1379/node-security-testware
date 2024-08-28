@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Nodes>
+    <Node>
+        <NodeFdn>%s</NodeFdn>
+        <SubAltName>%s</SubAltName>
+        <SubAltNameType>%s</SubAltNameType>  
+		<EnableOMConfiguration1>
+            <removeTrustOnFailure>true</removeTrustOnFailure>
+            <trustedCertificateFilePath>IPSEC</trustedCertificateFilePath>
+            <dnsServer1>10.0.0.1</dnsServer1>
+            <dnsServer2>10.0.0.2</dnsServer2>
+            <ipAddressOaMInner>%s</ipAddressOaMInner>
+            <networkPrefixLength>24</networkPrefixLength>
+            <ipAccessHostEtId>2</ipAccessHostEtId>
+            <defaultrouter0>10.163.152.1</defaultrouter0>
+            <ipAddressOaMOuter>%s</ipAddressOaMOuter>
+            <remoteIpAddress>10.163.155.234</remoteIpAddress>
+            <remoteIpAddressMask>30</remoteIpAddressMask>
+            <peerOaMIpAddress>10.163.155.234</peerOaMIpAddress>
+            <peerIdentityIdFqdn>SeGW1.LTERAN.example.com</peerIdentityIdFqdn>
+            <peerIdentityIdType>IP_V4_ADDRESS</peerIdentityIdType>
+            <tsLocalIpAddressMask>32</tsLocalIpAddressMask>
+            <tsRemoteIpAddressRanges>
+            	<ipAddress>10.0.0.0</ipAddress>
+            	<mask>0</mask>
+            </tsRemoteIpAddressRanges>
+            <ipSecTunnelAllowedTransforms>
+            	<ipSecTunnelAllowedTransform>
+            		<encryptionAlgorithm>AES_CBC_128</encryptionAlgorithm>
+            		<integrityAlgorithm>HMAC_SHA_1_96</integrityAlgorithm>
+            	</ipSecTunnelAllowedTransform>
+            </ipSecTunnelAllowedTransforms>
+            <ikePeerAllowedTransforms>
+            	<ikePeerAllowedTransform>
+            		<pseudoRandomFunction>HMAC_SHA1</pseudoRandomFunction>
+            		<diffieHellmanGroup>GROUP_2</diffieHellmanGroup>
+            		<integrityAlgorithm>HMAC_SHA_1_96</integrityAlgorithm>
+            		<encryptionAlgorithm>AES_CBC_128</encryptionAlgorithm>
+            	</ikePeerAllowedTransform>
+            </ikePeerAllowedTransforms>
+            <vid>1000</vid>
+        </EnableOMConfiguration1>		
+    </Node>
+</Nodes>

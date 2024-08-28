@@ -1,0 +1,31 @@
+context,methodRest,expectedHttpStatus,expectedHttpResponse,domainName,otpCount,otpValidityPeriodInMinutes,expected_OTPCount,expected_OTPValidityPeriod,algorithmAndKeySize,commonName,subjectAlternativeNameType,subjectAlternativeNameValue,additionalTestInfo,ipVersion,ipFamily,pathParam,expectedDomainName,expectedCertificateId,expectedEnrollmentServerGroupId,expectedEnrollmentServerId,expectedEnrollmentAuthorityId,expectedEnrollmentAuthorityName,cmpTrustCategoryId,expectedTrustCategoryId,expectedResource,expectedResourceId,expectedSubResource,expectedSubResourceId,expectedDeleteEEresponse
+
+### POST - Shared-CNF Node  ConnectivityInformation  IPv4
+1,POST,200,,,,,default,default,,,,, - path parameters nodeName and domain Name (OAM) - no body,INET,INET,OAM,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,,,,,
+2,POST,200,,OAM,10,3600,10,3600,RSA_2048,$nodeName-oam,DNS_NAME,$nodeName.ericsson.com, - path parameters nodeName and domain Name (OAM) - query params [INET6]  and body defined,INET,INET6,OAM,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,,,,,
+2,POST,200,,OAM,50,2400,50,2400,RSA_2048,$nodeName-oam,IPV4,192.168.103.252, - path parameters nodeName and domain Name (OAM) - query params [INET6]  and body defined,INET,INET6,OAM,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,,,,,
+
+### POST - Shared-CNF Node ConnectivityInformation  IPv6
+3,POST,200,,OAM,,43200,default,43200,RSA_4096,$nodeName-oam,IPV6,2001:0df8:85a3:0001:1319:8f2e:0b70:73c4, - path parameters nodeName and domain Name (OAM) - query params [INET]  and body defined,INET6,INET,OAM,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,,,,,
+
+### POST - RadioNode ConnectivityInformation IPv4
+4,POST,200,,OAM,5,1800,5,1800,RSA_2048,$nodeName-oam,DNS_NAME,$nodeName.ericsson.com, - path parameters nodeName and domain Name (OAM) - query params [INET6]  and body defined,INET,INET6,OAM,OAM,oamNodeCredential,1,1,CN=NE_OAM_CA,CN=NE_OAM_CA,oamCmpCaTrustCategory,oamTrustCategory,,,,,
+
+### DELETE Domain - All nodes included in ADDED_NODES DataSource
+5,DELETE,200,,OAM,,,,,,,,, - REST DELETE - path parameters nodeName and domain Name (OAM),,,OAM,,,,,,,,,nodes,$nodeName,domains,$nodeName-oam,11202 Entity not Found
+
+### RBAC – POST/DELETE  Shared-CNF Node ConnectivityInformation IPv4
+6,POST,403,Security violation exception,,,,,,,,,, - REST POST - RBAC violation verification,INET,INET,OAM,,,,,,,,,,,,,
+6,DELETE,403,Security violation exception,,,,,,,,,, - REST DELETE - RBAC violation verification,,,OAM,,,,,,,,,,,,,
+
+### POST  negative invalid nodeResource
+7,POST,400,The node specified does not exist,,,,,,,,,, - REST POST Not existing node,INET,INET,OAM,,,,,,,,,,,,,
+
+###  DELETE  negative invalid nodeResource
+8,DELETE,400,The node specified does not exist,,,,,,,,,, - REST DELETE Not existent node,,,OAM,,,,,,,,,,,,,
+
+###  POST  negative invalid path parm [IPSEC]
+9,POST,400,Invalid argument value : Domain [IPSEC] not supported,,,,,,,,,, - REST POST Invalid argument value : Domain [IPSEC] not supported,INET,INET,IPSEC,,,,,,,,,,,,,
+
+###  DELETE  negative invalid path parm [IPSEC]
+10,DELETE,400,Invalid argument value : Domain [IPSEC] not supported,,,,,,,,,, - REST DELETE Invalid argument value : Domain [IPSEC] not supported,,,IPSEC,,,,,,,,,,,,,

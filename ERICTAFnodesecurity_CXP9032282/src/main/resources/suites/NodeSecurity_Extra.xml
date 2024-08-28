@@ -1,0 +1,127 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Extra - Skyfall">
+
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="extra"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+
+    <!-- SYNTAX ERROR SCENARIOS -->
+
+    <test name="SyntaxErrorScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SyntaxErrorScenario">
+                <methods>
+                    <exclude name="syntaxError"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- CREDENTIALS SCENARIOS -->
+
+    <test name="CredentialsScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CredentialsScenario">
+                <methods>
+                    <exclude name="credentialPositive"/>
+                    <exclude name="credentialNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="GetCredentialsScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.GetCredentialsScenario">
+                <methods>
+                    <exclude name="getCredentialsPositive"/>
+                    <exclude name="getCredentialsNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- SSH KEY SCENARIOS -->
+    <!-- Removed, as no longer working after efabgal's refactoring -->
+
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateIssueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario">
+                <methods>
+                    <include name="certificateIssuePositive"/>
+                    <exclude name="certificateIssueNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- CERTIFICATE REISSUE SCENARIOS -->
+
+    <test name="CertificateReissueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateReissueScenario">
+                <methods>
+                    <exclude name="certificateReissuePositive"/>
+                    <exclude name="certificateReissueNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- TRUST DISTRIBUTE SCENARIOS -->
+
+    <test name="TrustDistributeScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustDistributeScenario">
+                <methods>
+                    <include name="trustDistributePositiveCertType"/>
+                    <include name="trustDistributePositiveCaName"/>
+                    <exclude name="trustDistributeNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- TRUST REMOVE SCENARIOS -->
+
+    <test name="TrustRemoveScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TrustRemoveScenario">
+                <methods>
+                    <include name="trustRemovePositiveIsdn"/>
+                    <include name="trustRemovePositiveCaName"/>
+                    <exclude name="trustRemoveNegative"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test by DespicableUs team - commented out, to be re-tested -->
+    <!-- Test not meant for MT - it would require one pRBS node in MT -->
+    <!--<test name="IntegrationTrustScenarios">-->
+    <!--<classes>-->
+    <!--<class name="com.ericsson.nms.security.nscs.scenario.CertificateTrustManagementECIMPositiveScenario" />-->
+    <!--</classes>-->
+    <!--</test>-->
+
+
+</suite>

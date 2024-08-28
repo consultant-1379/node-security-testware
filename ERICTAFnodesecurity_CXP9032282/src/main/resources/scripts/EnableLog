@@ -1,0 +1,27 @@
+csti info
+te default *
+te save *
+te e all CPPSEC_PKIMGMT_IF
+te e all cppsec_pkimgmt_ctrl
+te e all cppsec_pkimgmt_server
+te d trace3 cppsec_pkimgmt_server
+te d trace3 cppsec_pkimgmt_ctrl
+te preset trace1 trace2 trace9 enter return send_sig rec_sig cppsec_c*
+te preset trace1 trace2 trace9 enter return send_sig rec_sig cppsec_s*
+te preset trace1 trace2 trace9 enter return send_sig rec_sig cppsec_m*
+te e all Ipi_ipsecfh_proc
+te e all IPSECFH_MODATA
+te e all IPSECFH_DOMAIN
+te e trace5 se.ericsson.cello.moframework.NotificationSender:*
+te preset trace1 trace9 cppsec_cmpClient
+te save *
+readclock
+tm -disconnect
+ls -lrt /d/usr/cello/telogs/
+tm -disk activate
+tm -attach 12 COREMPBOARDVALUE
+tm -save
+tm -disk ls
+tm -status
+ls -lrt /d/usr/cello/telogs/
+dumpcap -o -a duration:3600 -i any

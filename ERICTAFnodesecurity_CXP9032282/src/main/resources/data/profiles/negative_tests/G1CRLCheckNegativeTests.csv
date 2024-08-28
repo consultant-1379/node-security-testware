@@ -1,0 +1,5 @@
+suiteProfile,testType,certType,nodeindex,sync,expectedMessage
+maintrack,CT_Invalid_CertType,IPSECS,erbs01,,"10091"
+maintrack,CT_Invalid_CertType,IPSEC,erbs01,,"Certificate Type not supported"
+maintrack,CT_Invalid_CertType,INVALID,erbs01,,"10091"
+maintrack,CT_Node_Missing,OAM,unexistingcppnode,,"10004"

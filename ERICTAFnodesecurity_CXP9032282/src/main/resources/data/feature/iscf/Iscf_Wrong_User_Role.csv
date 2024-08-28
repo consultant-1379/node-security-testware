@@ -1,0 +1,2 @@
+expectedHttpStatus,subjectAltNameFormat,subjectAltNameValue,expectedHttpResponse
+400,IPV4,192.168.103.252,SECURITY_VIOLATION_ERROR

@@ -1,0 +1,3 @@
+context,username,firstName,lastName,email,password,passwordResetFlag,enabled,timeout,roles
+1,NodeSecurityIscf_ADMIN,NodeSecurityIscf_ADMIN,NodeSecurityIscf_ADMIN,NodeSecurityIscf_ADMIN@test.it,Cmuserpasswdiscf_1,false,true,60,"SECURITY_ADMIN"
+2,NodeSecurityIscf_Operator,NodeSecurityIscf_Operator,NodeSecurityIscf_Operator,NodeSecurityIscf_Operator@test.it,TestPassword#1,false,true,60,OPERATOR

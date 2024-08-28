@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TLSv1.3Support - Vulcanians" parallel="tests">
+	<test name="Setup Teardown for TLS1.3 version update">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTLS13version"/>
+		</classes>
+	</test>
+	<test name="Support_TLSv1.3_Scenario" preserve-order="false">
+		<classes>
+			<class
+				name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SupportForTLS1_3TestScenario">
+				<methods>
+					<include name="useTls13Node" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

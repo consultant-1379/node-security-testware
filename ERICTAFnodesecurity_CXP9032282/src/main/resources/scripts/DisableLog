@@ -1,0 +1,6 @@
+dumpcap -Q
+tm -status
+tm -disconnect
+ls -lrt /d/usr/cello/telogs/
+ftget /d/logfiles/sniffer/default
+ftget /d/usr/cello/telogs

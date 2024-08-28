@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Integration On Pico - DespicableUs">
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+    <!-- SETUP ENVIRONMENT -->
+
+    <test name="SetUpEnvironmentScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+
+    <!--     CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario"/>
+        </classes>
+    </test>
+
+
+    <!--     TRUST GET SCENARIOS -->
+
+    <test name="IntegrationTrustScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateTrustManagementECIMPositiveScenario"/>
+        </classes>
+    </test>
+
+
+</suite>

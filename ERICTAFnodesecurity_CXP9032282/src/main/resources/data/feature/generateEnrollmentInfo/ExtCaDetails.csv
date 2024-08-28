@@ -1,0 +1,2 @@
+caName,pemFile,trustProfileName,entityProfileName,expectedMessage
+MyTestCa_,SampleExtCa.pem,PKI_OAM_NE_CHAIN_TP,PKI_DUSGen2OAM_CHAIN_EP,"certificate imported successfully"

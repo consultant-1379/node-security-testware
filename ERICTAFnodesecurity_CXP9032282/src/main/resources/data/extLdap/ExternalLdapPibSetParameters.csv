@@ -1,0 +1,17 @@
+context,pibParameterName,pibParameterValue
+1,primaryServerAddress,"141.137.87.62:6389"
+1,secondaryServerAddress,"141.137.87.62:6389"
+1,ldapConnectionMode,LDAP
+1,baseDN,"dc=acme,dc=com"
+1,remoteAuthProfile,nosearch
+1,userBindDNFormat,"""uid=\$user,ou=pdu nam,dc=acme,dc=com"""
+1,bindMode,NONE
+1,authType,REMOTEAUTHN
+2,primaryServerAddress,"141.137.87.62:6389"
+2,secondaryServerAddress,"141.137.87.62:6389"
+2,ldapConnectionMode,LDAP
+2,baseDN,"dc=acme,dc=com"
+2,remoteAuthProfile,nosearch
+2,userBindDNFormat,"""uid=\$user,ou=pdu nam,dc=acme,dc=com"""
+2,bindMode,NONE
+2,authType,LOCAL

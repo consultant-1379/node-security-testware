@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Agat_Security_PKI_ARNL" preserve-order="true">
+    <parameter name="agat" value="true"/>
+    <parameter name="get_MOs_for_debug_purpose" value="true"/>
+    <test name="CREDENTIAL Create/Update Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.BeforeTestRNLScenario">
+            </class>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+            </class>
+        </classes>
+    </test>
+    <test name="SL2 Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Sl2TestScenario">
+                <methods>
+                    <exclude name="sl2Activation"/>
+                    <exclude name="sl2DeActivation"/>
+                    <exclude name="sl2ActivationWrongUser"/>
+                    <exclude name="sl2DeActivationWrongUser"/>
+                    <include name="sl2GetMultiNodes"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TRUST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestAgatScenario">
+            </class>
+        </classes>
+    </test>
+    <test name="CRLCHECK Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.CrlCheckTestScenario">
+            </class>
+        </classes>
+    </test>
+    <!-- <test name="LDAP Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.LdapTestScenarioCbpoiNode">
+                <methods>
+                    <exclude name="LdapRenew"/>
+                </methods>
+            </class>
+        </classes>
+    </test> -->
+</suite>

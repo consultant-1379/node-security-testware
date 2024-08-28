@@ -1,0 +1,28 @@
+command,purpose
+secadm trust distribute,no command mandatory parameters
+secadm trust distribute --certtype IPSEC, missing mandatory parameter --nodefile or --nodelist
+secadm trust distribute --nodefile file:abc.xml, missing mandatory parameter --certtype
+"secadm trust distribute --nodelist node1,node2,NetworkElement=node5,MeContext=node4", missing mandatory parameter --certtype
+secadm trust distribute -certtype IPSEC --nodefile file:abc.txt, command syntax error -certtype
+"secadm trust distribute -certtype IPSEC --nodelist node1,node2,NetworkElement=node5,MeContext=node4", command syntax error -certtype
+secadm trust distribute --certtype IPSEC -nodefile file:abc.txt, command syntax error -nodefile 
+"secadm trust distribute --certtype IPSEC -nodelist node1,node2", command syntax error -nodelist
+secadm trust distribute -ctt IPSEC --nodefile file:abc.txt, command syntax error -ctt 
+secadm trust distribute -ct IPSEC -nff file:abc.txt, command syntax error -nff 
+secadm trust distribute -ct IPSEC --nodefile nodefile:abc.txt, command syntax error --nodefile nodefile:
+secadm trust distribute -ct IPSEC -n node1 node2, invalid value for -n
+secadm trust distribute -ct IPSEC --certtype OAM -n node1, -ct double param
+secadm trust distribute -n node1 -ct OAM, reverse order error
+
+secadm trust distribute --ca CA_TEST, invalid -ca param
+secadm trust distribute -ca CA_TEST -nodelist, invalid --nodelist param
+secadm trust distribute -ca CA_TEST -nodefile file:abc, invalid --nodefile param
+secadm trust distribute -ca CA_TEST1 CA_TEST2, invalid -ca list
+secadm trust distribute -ca CA_TEST1 CA_TEST2 --nodelist node1, invalid -ca list
+secadm trust distribute -ca CA_TEST1 -ca CA_TEST2, invalid double -ca param 
+"secadm trust distribute -ca CA_TEST --nodelist node1,node2 -n node3", invalid double --nodelist param
+secadm trust distribute -ca CA_TEST --nodefile file:abc.txt -nf file:efg.txt, invalid double --nodefile param 
+secadm trust distribute -ca CA_TEST -nff file:abc.txt, command syntax error -nff 
+secadm trust distribute -ca CA_TEST --nodefile file:abc.txt --nodelist node1, invalid --nodefile --nodelist
+secadm trust distribute --nodelist node1 -ca CA_TEST, reverse order syntax error
+secadm trust distribute --nodefile file:abc.txt -ca CA_TEST, reverse order syntax error

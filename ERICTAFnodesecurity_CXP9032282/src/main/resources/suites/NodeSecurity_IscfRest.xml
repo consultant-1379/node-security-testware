@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Iscf_Rest - Skyfall">
+
+    <parameter name="nscsprofiles" value="maintrack"/>
+
+    <test name="SetupAndTeardownIscfScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownIscfScenario"/>
+        </classes>
+    </test>
+
+    <test name="IscfRestTestScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IscfRestTestScenario"/>
+        </classes>
+    </test>
+
+</suite>

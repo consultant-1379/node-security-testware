@@ -1,0 +1,3 @@
+suiteProfile,testType,nodeindex,certType,caName,fileName
+maintrack,trustDistrCT_IPv4,erbs102,OAM,,
+maintrack,trustDistrCT_IPv4,erbs103,IPSEC,,

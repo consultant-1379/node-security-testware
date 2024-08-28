@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Certificate Issue Reissue - Skyfall">
+
+    <parameter name="dataprovidername" value="nodesToAdd_CertIssue"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="CertificateIssueScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateIssueScenario">
+            </class>
+        </classes>
+    </test>
+
+    <!-- CERTIFICATE REISSUE SCENARIOS -->
+
+    <test name="CertificateReissueScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateReissueScenario">
+            </class>
+        </classes>
+    </test>
+
+</suite>

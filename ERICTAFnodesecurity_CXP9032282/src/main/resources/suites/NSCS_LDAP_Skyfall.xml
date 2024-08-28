@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_LDAP - Skyfall" parallel="false">
+    <test name="Setup Teardown LDAP Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioLdap"/>
+        </classes>
+    </test>
+    <test name="LDAP Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.LdapTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security Generate_Enrollment_Info REST - Skyfall" parallel="false">
+    <test name="Setup and Teardown Generate Enrollment Information REST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownGenerateEnrollmentInfo_REST"/>
+        </classes>
+    </test>
+    <test name="Generate Enrollment Information Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.GenEnrollInfoREST_TestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

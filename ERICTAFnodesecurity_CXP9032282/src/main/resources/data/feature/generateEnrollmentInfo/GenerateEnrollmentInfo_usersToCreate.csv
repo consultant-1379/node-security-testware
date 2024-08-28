@@ -1,0 +1,3 @@
+context,username,firstName,lastName,email,password,passwordResetFlag,enabled,timeout,roles
+1,Gen_Enroll_Info_ADMIN,Gen_Enroll_Info_ADMIN,Gen_Enroll_Info_ADMIN,Gen_Enroll_Info_ADMIN@test.it,NscsAdm#01,false,true,60,"NodeSecurity_Administrator,PKI_EE_Administrator"
+2,Gen_Enroll_Info_Operator,Gen_Enroll_Info_Operator,Gen_Enroll_Info_Operator,Gen_Enroll_Info_Operator@test.it,NscsOper#01,false,true,60,OPERATOR

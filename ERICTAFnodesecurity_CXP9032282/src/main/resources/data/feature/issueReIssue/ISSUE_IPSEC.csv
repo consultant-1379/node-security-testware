@@ -1,0 +1,2 @@
+certType,fileName,subjectAltName,subjectAltNameType
+IPSEC,,192.168.100.1,IP_ADDRESS

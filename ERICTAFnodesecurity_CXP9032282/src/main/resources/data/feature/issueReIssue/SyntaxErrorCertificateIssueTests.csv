@@ -1,0 +1,9 @@
+command,purpose,expectedMessage
+secadm certificate issue,no command mandatory parameters,Error 10001
+secadm certificate issue --certtype IPSEC, missing mandatory parameter --xmlfile,Error 10001
+secadm certificate issue --xmlfile file:abc.xml, missing mandatory parameter --certtype,Error 10001
+secadm certificate issue -certtype IPSEC --xmlfile file:abc.xml, command syntax error -certtype,Error 10001
+secadm certificate issue --certtype IPSEC -xmlfile file:abc.xml, command syntax error -xmlfile,Error 10001
+secadm certificate issue -ctt IPSEC -xmlfile file:abc.xml, command syntax error -ctt,Error 10001
+secadm certificate issue -ct IPSEC -xff file:abc.xml, command syntax error -xff,Error 10001
+secadm certificate issue -ct IPSEC -xmlfile xmlfile:abc.xml, command syntax error --xmlfile xmlfile:,Error 10001

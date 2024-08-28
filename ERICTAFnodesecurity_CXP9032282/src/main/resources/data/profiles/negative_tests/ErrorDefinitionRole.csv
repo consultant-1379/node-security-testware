@@ -1,0 +1,5 @@
+command,purpose,expected,roles
+secadm credentials create -rn u1 -rp pw1 -sn u2 -sp pw2 -nn u3 -np pw3 -n LTE02ERBS00031,test,Error 10099 : Security violation exception.,credential_role
+secadm sshkey create --algorithm-type-size RSA_2048 -n LTE02ERBS00031,test,Error 10099 : Security violation exception.,sshkey_role
+secadm certificate issue -ct OAM -xf file:certIssue.xml,test,Error 10099 : Security violation exception.,oam_role
+secadm certificate issue -ct IPSEC -xf file:certIssue.xml,test,Error 10099 : Security violation exception.,ipsec_role

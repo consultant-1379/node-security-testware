@@ -1,0 +1,2 @@
+expectedHttpStatus,expectedHttpResponse,developerMessage,additionalTestInfo
+403,FORBIDDEN,"Make sure you have the requested rights"," - Verify ENM User cannot access to NBI without proper Role assigned"

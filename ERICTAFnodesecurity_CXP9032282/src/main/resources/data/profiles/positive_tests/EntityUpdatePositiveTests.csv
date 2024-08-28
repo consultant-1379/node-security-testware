@@ -1,0 +1,3 @@
+suiteProfile,command,fileName,expectedMsg,step
+extra,"pkiadm etm -u -xf file:",EE_update.xml,"Entity with name:: LTE07pERBS00002-ipsec is sucessfully updated",before
+extra,"pkiadm etm -u -xf file:",EE_updateAfter.xml,"Entity with name:: LTE07pERBS00002-ipsec is sucessfully updated",after

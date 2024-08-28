@@ -1,0 +1,13 @@
+testCaseId,suiteProfile,testType,nodeindex,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs001,OAM,SCEP,,,,
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs002,IPSEC,SCEP,,RSA_2048,192.168.100.1,IP_ADDRESS
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs003,OAM,CMPv2_INITIAL,,,,
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs004,IPSEC,CMPv2_INITIAL,,RSA_2048,192.168.100.1,IP_ADDRESS
+
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs005,OAM,CMPv2_INITIAL,,,,
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs006,IPSEC,CMPv2_INITIAL,,RSA_2048,192.168.100.1,IP_ADDRESS
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs007,OAM,CMPv2_INITIAL,,,,
+TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueERBS,RFA250erbs008,IPSEC,CMPv2_INITIAL,,RSA_2048,192.168.100.1,IP_ADDRESS
+
+#TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueDG2,RFA250radionode001,OAM,,,,,
+#TORF-77163_NodeSecurity_CertificateIssue_PositiveScenarios,maintrack,certIssueDG2,RFA250radionode002,IPSEC,,,,192.168.100.1,IP_ADDRESS

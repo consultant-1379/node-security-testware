@@ -1,0 +1,5 @@
+suiteProfile,testType,nodeindex,certType,caName,serialNumber,reason,fileName
+maintrack,CA_Reissue,erbs001,OAM,NE_OAM_CA,,unspecified,
+maintrack,CT_Reissue,erbs002,IPSEC,,,unspecified,
+maintrack,CT_Reissue,radionode001,OAM,,,unspecified,
+maintrack,CA_Reissue,radionode001,IPSEC,NE_IPsec_CA,,unspecified,

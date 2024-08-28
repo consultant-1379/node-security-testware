@@ -1,0 +1,4 @@
+suiteName,teamName,nodeOperatorType,nodeType,platformType,networkElementId,ConnectivityInfo,ipAddress,ossModelIdentity,ossPrefix,port,transportType,snmpAgentPort,snmpVersion,rootUserName,rootUserPassword,secureUserName,secureUserPassword,normalUserName,normalUserPassword,timeZone
+Node Security Ldap REST - Skyfall,Skyfall,NETSIM,RadioNode,,LTE22dg2ERBS2222,INET,194.8.3.1,,MeContext=LTE22dg2ERBS2222,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,
+Node Security Ldap REST - Skyfall,Skyfall,NETSIM,Shared-CNF,CBP-OI,SharedCNF555Inet6,INET6,2405:0dc7:89e9:3a10:1814:8cab:0ff1:f39c,,MeContext=SharedCNF555Inet6,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,Europe/Dublin
+Node Security Ldap REST - Skyfall,Skyfall,NETSIM,Shared-CNF,CBP-OI,SharedCNF777Inet4,INET,91.63.7.181,,MeContext=SharedCNF777Inet4,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,Europe/Dublin

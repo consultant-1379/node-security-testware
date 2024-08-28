@@ -1,0 +1,9 @@
+command,purpose
+secadm certificate issue,no command mandatory parameters
+secadm certificate issue --certtype IPSEC, missing mandatory parameter --xmlfile
+secadm certificate issue --xmlfile file:abc.xml, missing mandatory parameter --certtype
+secadm certificate issue -certtype IPSEC --xmlfile file:abc.xml, command syntax error -certtype
+secadm certificate issue --certtype IPSEC -xmlfile file:abc.xml, command syntax error -xmlfile 
+secadm certificate issue -ctt IPSEC -xmlfile file:abc.xml, command syntax error -ctt 
+secadm certificate issue -ct IPSEC -xff file:abc.xml, command syntax error -xff 
+secadm certificate issue -ct IPSEC -xmlfile xmlfile:abc.xml, command syntax error --xmlfile xmlfile:

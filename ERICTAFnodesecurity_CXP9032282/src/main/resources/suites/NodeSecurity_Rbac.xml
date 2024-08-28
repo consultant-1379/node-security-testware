@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Rbac - Skyfall">
+
+    <parameter name="dataprovidername" value="nodesToAdd_Rbac"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="RbacSetupTearDownScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.RbacSetupTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- RBAC SCENARIOS ON CUSTOM ROLES (credential_role, sshkey_role, oam_role, ipsec_role) -->
+
+    <test name="RbacCustomRolesScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.RbacCustomRolesScenario"/>
+        </classes>
+    </test>
+
+    <!-- RBAC SCENARIOS ON PREDEFINED ROLES (OPERATOR, SECURITY-ADMIN, FIELD-TECHNICIAN) -->
+
+    <test name="RbacPredefinedRolesScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.RbacPredefinedRolesScenario"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,7 @@
+suiteProfile,testType,nodeindex,secureUserName,secureUserPassword,algorithmAndKeySize,fileName
+maintrack,create,sgsn001,netsim,netsim,RSA_1024,
+#maintrack,create,sgsn002,netsim,netsim,RSA_2048,nodefile.txt
+#maintrack,update,sgsn002,netsim,netsim,DSA_1024,
+maintrack,update,sgsn001,netsim,netsim,RSA_1024,
+
+maintrack,createRbac,sgsnRbac001,netsim,netsim,RSA_1024,

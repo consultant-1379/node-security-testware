@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Profiles>
+    <TrustProfile Name="%s">
+        <Modifiable>true</Modifiable>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>ENM_PKI_Root_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>ENM_OAM_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>ENM_Infrastructure_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <TrustCAChain>
+            <IsChainRequired>false</IsChainRequired>
+            <InternalCA>
+                <CertificateAuthority>
+                    <Name>NE_OAM_CA</Name>
+                </CertificateAuthority>
+            </InternalCA>
+        </TrustCAChain>
+        <ExternalCA>
+            <CertificateAuthority>
+                <Name>%s</Name>
+            </CertificateAuthority>
+        </ExternalCA>
+    </TrustProfile>
+</Profiles>

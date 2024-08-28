@@ -1,0 +1,60 @@
+targetCategory,targetType,targetModelIdentifier,modelIdentifierType,enrollmentMode,logicalName,nodeFdn,userLabel,ipsecAreas,subjectAltNameFormat,subjectAltNameValue,expectedHttpStatus,additionalTestInfo,expectedHttpResponse
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS0010001,"NetworkElement=LTEiscfERBS0010001",userLabel_LTEiscfERBS0010001,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when [Non Existing nodeFdn] is provided for CPP node","NormalizedNodeReference MO is null"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,,userLabel_LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated for CPP node  when a [null nodeFdn] is provided","Wrong FDN[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS0010001,blank,userLabel_LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated for CPP node  when a [blank nodeFdn] is provided","Wrong FDN[]"
+
+NODE,CPP,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [wrong targetType 'CPP'] is provided for CPP ERBS node","node type[CPP] not supported"
+
+NODE,,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [null targetType] is provided for CPP ERBS node","Wrong node type[null]"
+
+NODE,blank,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [blank targetType] is provided for CPP ERBS node","Wrong node type[]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when [null enrollmentMode] is provided for CPP ERBS node","Wrong Enrollment Mode[null]"
+
+#### NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,blank,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when [blank enrollmentMode] is provided for CPP ERBS node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.enums.EnrollmentMode"
+#### NODE,ERBS,"19.Q3-J.4.50",blank,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when [blank modelIdentifierType] is provided for CPP ERBS node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.model.NodeModelInformation.ModelIdentifierType"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,ONLINE_SCEP,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when [NOT_SUPPORTED enrollmentMode 'ONLINE_SCEP'] is provided for CPP ERBS node","Wanted Enrollment Mode[ONLINE_SCEP] not supported for NE type[ERBS]"
+
+,,,,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a wrong DTO [missing 'nodeModelInfo' object] is provided for CPP ERBS node","Bad request : Null mandatory DTO"
+
+
+#### NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,blank,IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [blank ipsecAreas] is provided for CPP ERBS node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.iscf.IpsecArea"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,,IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [null ipsecAreas] is provided for CPP ERBS node","Wrong IpSec Areas[null]"
+
+### NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OAM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [wrong ipsecAreas parameter] is provided for CPP ERBS node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.iscf.IpsecArea.OAM"
+
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [null logicalName] is provided for CPP ERBS node","Wrong logical name[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,blank,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [blank logicalName] is provided for CPP ERBS node","Wrong logical name[]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",,"TRANSPORT,OM",,,400," - Verify IPSEC ISCF is NOT generated when a wrong DTO [missing 'params' object] is provided for CPP ERBS node","Bad request : Null mandatory DTO"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",,,400," - Verify IPSEC ISCF is NOT generated when a wrong DTO [null subjectAltNameParam] is provided for CPP ERBS node","Bad request : Null mandatory DTO"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV6,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [wrong subjectAltNameFormat 'IPV6'- expected 'IPV4'] is provided for CPP ERBS node","subjectAltNameData is not valid IPv6 address"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,"2001:0db8:85a3:0000:1319:8a2e:0370:7344",400," - Verify IPSEC ISCF is NOT generated when a [wrong subjectAltNameValue 'IPV6'- expected 'IPV4'] is provided for CPP ERBS node","subjectAltNameData is not valid IPv4 address"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",IPV4,,400," - Verify IPSEC ISCF is NOT generated when a [null subjectAltNameValue] is provided for CPP ERBS node","Wrong subjectAltNameData[null]"
+
+#### NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LTEiscfERBS00102,"TRANSPORT,OM",,192.168.103.252,400," - Verify IPSEC ISCF is NOT generated when a [null IPV4 subjectAltNameFormat] is provided for CPP ERBS node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.iscf.SubjectAltNameFormat"
+
+
+##### conventions for negative tests:
+# do not remove or change the label fields
+#
+###### Test with <Blank> String :
+#      Put the label <blank> - without double quote - in the field value to # be tested.
+#
+#
+###### Test with <null> field :
+#      Remove the field value to be tested.
+#
+# a library specific method  will create the body Json to provide to the REST POST request accordingly
+#

@@ -1,0 +1,2 @@
+proxyAccountXmlTemplate,proxyAccountDataXmlTemplate,fileName,adminStatus,is_Delete_operation_expected_success
+ProxyAccount.template,ProxyAccountData.template,ProxyAccount.xml,DISABLED,true

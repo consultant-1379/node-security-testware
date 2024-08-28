@@ -1,0 +1,43 @@
+targetCategory,targetType,targetModelIdentifier,modelIdentifierType,enrollmentMode,nodeFdn,ipVersion,subjectAltNameFormat,subjectAltNameValue,expectedHttpStatus,additionalTestInfo,expectedHttpResponse
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio01023",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA  is NOT generated when [Non Existing nodeFdn] is provided for ECIM node","NormalizedNodeReference MO is null"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,,INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated for ECIM node  when a [null nodeFdn] is provided","Wrong FDN[null]"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated for ECIM node  when a [blank nodeFdn] is provided","Wrong FDN[]"
+
+NODE,CPP,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a [wrong targetType 'CPP'] is provided for ECIM RadioNode","node type[CPP] not supported"
+
+NODE,blank,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a [null targetType] is provided for ECIM RadioNode","Wrong node type[null]"
+
+NODE,blank,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a [blank targetType] is provided for ECIM node","Wrong node type[]"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when [null enrollmentMode] is provided for ECIM node","Wrong Enrollment Mode[null]"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,blank,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when [blank enrollmentMode] is provided for ECIM node","Wrong Enrollment Mode[null]"
+
+NODE,RadioNode,"21.Q4-R41A14",blank,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when [blank modelIdentifierType] is provided for ECIM node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.enums.EnrollmentMode"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,ONLINE_SCEP,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," -  Verify ISCF SEC DATA is NOT generated when [NOT_SUPPORTED enrollmentMode 'ONLINE_SCEP'] is provided for ECIM node","Wanted Enrollment Mode[ONLINE_SCEP] not supported for NE type[ERBS]"
+
+,,,,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a wrong DTO [missing 'nodeModelInfo' object] is provided for ECIM node","Bad request : Null mandatory DTO"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,,,400," - Verify ISCF SEC DATA is NOT generated when a wrong DTO [null subjectAltNameParam] is provided for ECIM node","Bad request : Null mandatory DTO"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV6,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a [wrong subjectAltNameFormat 'IPV6'- expected 'IPV4'] is provided for ECIM node","subjectAltNameData is not valid IPv6 address"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,"2001:0db8:85a3:0000:1319:8a2e:0370:7344",400," - Verify ISCF SEC DATA is NOT generated when a [wrong subjectAltNameValue 'IPV6'- expected 'IPV4'] is provided for ECIM node","subjectAltNameData is not valid IPv4 address"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,,400," - Verify ISCF SEC DATA is NOT generated when a [null IPV4 subjectAltNameValue] is provided for ECIM node","subjectAltNameData is not valid IPv4 address"
+
+NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,,192.168.103.252,400," - Verify ISCF SEC DATA is NOT generated when a [null IPV4 subjectAltNameFormat] is provided for ECIM node","Internal error: No enum constant com.ericsson.nms.security.nscs.api.iscf.SubjectAltNameFormat"
+
+
+
+
+
+
+
+
+#################################################
+# NODE,RadioNode,"21.Q4-R41A14",OSS_IDENTIFIER,CMPv2_VC,"NetworkElement=LTEsecdataRadio00002",INET,IPV4,192.168.103.252,400,

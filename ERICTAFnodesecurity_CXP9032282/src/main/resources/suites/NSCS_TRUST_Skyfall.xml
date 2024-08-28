@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUST - Skyfall" parallel="false">
+    <test name="Setup Teardown TRUST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrust"/>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestScenario">
+                <methods>
+                    <include name="trustDistributeOAM_PositiveTest"/>
+                    <include name="trustDistributeIPSEC_PositiveTest"/>
+                    <include name="trustDistribute_RemoveOAM_CaName_Combined"/>
+                    <include name="trustDistribute_RemoveIPSEC_CaName_Combined"/>
+                    <include name="trustDistribute_RemoveOAM_IssuerDn_Combined"/>
+                    <include name="trustDistribute_RemoveIPSEC_IssuerDn_Combined"/>
+                    <include name="trustDistributeOAM_WrongUserRole"/>
+                    <include name="trustDistributeIPSEC_WrongUserRole"/>
+                    <include name="trustDistributeOAM_CaName_WrongUserRole"/>
+                    <include name="trustDistributeIPSEC_Caname_WrongUserRole"/>
+                    <include name="trustDistributeInvalidCT_NegativeTest"/>
+                    <include name="trustDistributeInvalidCA_NegativeTest"/>
+                    <include name="trustDistributeNonExistentNode"/>
+                    <include name="trustNegativeSyntax"/>
+                    <!-- The here below scenarios must be excluded, because they are called inside the above "*_Combined" scenarios -->
+                    <exclude name="trustRemoveOAM_IssuerDN_PositiveTest"/>
+                    <exclude name="trustRemoveIPSEC_IssuerDn_PositiveTest"/>
+                    <exclude name="trustDistributeOAM_CaName_PositiveTest"/>
+                    <exclude name="trustDistributeIPSEC_Caname_PositiveTest"/>
+                    <exclude name="trustRemoveOAM_CaName_PositiveTest"/>
+                    <exclude name="trustRemoveIPSEC_CaName_PositiveTest"/>
+                    <exclude name="trustRemoveOAM_CaName_WrongUserRole"/>
+                    <exclude name="trustRemoveIPSEC_CaName_WrongUserRole"/>
+                    <!-- The here below scenarios are called by "trustDistribute_RemoveOAM_CaName_Combined" scenario, in case -Dgroups != (RFA250|ARNL|ENM_EXTERNAL_TESTWARE) -->
+                    <exclude name="trustRemoveInvalidCT_NegativeTest"/>
+                    <exclude name="trustRemoveInvalidCA_NegativeTest"/>
+                    <exclude name="trustRemoveBad_SN_Format_NegativeTest"/>
+                    <exclude name="trustRemoveInvalid_SN_NegativeTest"/>
+                    <exclude name="trustRemoveNonExistentNode_NegativeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

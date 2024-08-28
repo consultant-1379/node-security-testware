@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LogMngTest" preserve-order="true">
+    <test name="Log Mng">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.TestLogMngScenario">
+                <methods>
+                    <include name="sl2EnableScenario"/>
+                    <include name="sl2DisableScenario"/>
+                    <include name="issuereissueScenario"/>
+                    <include name="trustScenario"/>
+                    <include name="crlcheckScenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

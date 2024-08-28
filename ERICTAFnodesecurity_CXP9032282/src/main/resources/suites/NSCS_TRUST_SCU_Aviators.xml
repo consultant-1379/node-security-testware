@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUST_SCU - Aviators" parallel="false">
+    <test name="Setup Teardown TRUST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrust"/>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestScenario">
+            <methods>
+                    <include name="trustDistributeOAM_PositiveTest"/>
+                    <include name="trustDistribute_RemoveOAM_CaName_Combined"/>
+                    <include name="trustDistribute_RemoveOAM_IssuerDn_Combined"/>
+                    <include name="trustDistributeOAM_WrongUserRole"/>
+                    <include name="trustDistributeOAM_CaName_WrongUserRole"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

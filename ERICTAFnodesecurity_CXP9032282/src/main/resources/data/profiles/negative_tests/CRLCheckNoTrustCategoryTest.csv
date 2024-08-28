@@ -1,0 +1,3 @@
+suiteProfile,testType,certType,nodeindex,expectedMessage
+maintrack,CT_Node_IPsec_Trust_Category_MO_Not_Found,IPSEC,radionode013,"10101"
+maintrack,CT_Node_OAM_Trust_Category_MO_Not_Found,OAM,radionode403,"10101"

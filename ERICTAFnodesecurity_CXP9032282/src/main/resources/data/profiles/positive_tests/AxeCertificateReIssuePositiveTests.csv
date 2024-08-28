@@ -1,0 +1,2 @@
+testCaseId,suiteProfile,testType,nodeindex,certType,caName,serialNumber,reason,fileName
+MR37990_Q2_NodeSecurity_CertificateReIssue_PositiveScenarios,maintrack,CA_Reissue,bsc001,OAM,NE_OAM_CA,,unspecified,

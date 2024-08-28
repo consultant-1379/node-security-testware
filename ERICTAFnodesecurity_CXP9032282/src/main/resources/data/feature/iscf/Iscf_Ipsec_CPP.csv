@@ -1,0 +1,2 @@
+targetCategory,targetType,targetModelIdentifier,modelIdentifierType,enrollmentMode,logicalName,nodeFdn,userLabel,ipsecAreas,expectedEndEntity,expectedIpsecAreas,expectedKeyLength,expectedEnrolMode,expectedDistinguishedName-ipsec,expectedCertificateAuthorityDn-ipsec
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",userLabel_LTEiscfERBS00102,"TRANSPORT,OM","LTEiscfERBS00102",2,1,2,"CN=LTEiscfERBS00102-ipsec DUAC NAM","CN=NE_IPsec_CA"

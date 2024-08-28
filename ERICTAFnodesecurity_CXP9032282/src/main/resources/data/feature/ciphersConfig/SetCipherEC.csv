@@ -1,0 +1,2 @@
+protocol,certType,enrollmentMode,entityProfileName,keySize
+SSL/HTTPS/TLS,OAM,CMPv2_VC,DUSGen2_OAM_ECDSA_EP,ECDSA_256

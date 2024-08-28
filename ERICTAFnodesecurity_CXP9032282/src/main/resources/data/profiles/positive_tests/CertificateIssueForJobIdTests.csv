@@ -1,0 +1,4 @@
+suiteProfile,testType,nodeindex,certType,enrollmentMode,entityProfileName,keySize,subjectAltName,subjectAltNameType
+maintrack,certIssueERBS,erbs102,OAM,SCEP,,,,
+maintrack,certIssueERBS,erbs103,IPSEC,SCEP,,RSA_2048,192.168.100.1,IP_ADDRESS
+

@@ -1,0 +1,6 @@
+testType,algorithmAndKeySize,fileName
+create,RSA_1024,
+create,RSA_2048,nodefile.txt
+update,,
+update,RSA_4096,
+delete,,

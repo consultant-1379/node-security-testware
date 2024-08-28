@@ -1,0 +1,2 @@
+testCaseId,suiteProfile,testType,nodeindex,certType,caName,fileName
+MR37990_Q2_NodeSecurity_TrustDistribute_certtype_PositiveScenarios,maintrack,trustDistrCT_IPv4,bsc001,OAM,,

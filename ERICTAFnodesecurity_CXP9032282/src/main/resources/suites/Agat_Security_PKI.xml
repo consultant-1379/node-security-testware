@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Agat_Security_PKI" preserve-order="true">
+    <parameter name="agat" value="true"/>
+    <test name="CREDENTIAL Create/Update Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.CredentialTestScenario">
+                <methods>
+                    <include name="credentialCreatePositive"/>
+                    <include name="credentialUpdatePositive"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+                <methods>
+                    <include name="issueOAMPositiveTest"/>
+                    <include name="issueIPSECPositiveTest"/>
+                    <include name="reIssueOAMCertTypePositiveTest"/>
+                    <include name="reIssueIPSECCertTypePositiveTest"/>
+                    <include name="reIssueOAMCaNamePositiveTest"/>
+                    <include name="reIssueIPSECCaNamePositiveTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SL2 Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.Sl2TestScenario">
+                <methods>
+                    <include name="sl2Activation"/>
+                    <include name="sl2DeActivation"/>
+                    <include name="sl2GetMultiNodes"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TRUST Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustTestAgatScenario">
+                <methods>
+                    <include name="trustDistributeOAM_PositiveTest"/>
+                    <include name="trustDistributeIPSEC_PositiveTest"/>
+                    <include name="trustDistributeOAM_CaName_PositiveTest"/>
+                    <include name="trustDistribute_RemoveOAM_CaName"/>
+                    <include name="trustDistributeIPSEC_CaName_PositiveTest"/>
+                    <include name="trustDistribute_RemoveIPSEC_CaName"/>
+                    <include name="trustDistribute_RemoveOAM_IssuerDn"/>
+                    <include name="trustDistribute_RemoveIPSEC_IssuerDn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CRLCHECK Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.CrlCheckTestScenario">
+                <methods>
+                    <include name="crlCheckOAMEnablePositiveTest"/>
+                    <include name="crlCheckOAMDisablePositiveTest"/>
+                    <include name="crlCheckIPSECEnablePositiveTest"/>
+                    <include name="crlCheckIPSECDisablePositiveTest"/>
+                    <include name="crlCheckALLEnablePositiveTest"/>
+                    <include name="crlCheckALLDisablePositiveTest"/>
+                    <include name="crlCheckDownloadPositiveTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

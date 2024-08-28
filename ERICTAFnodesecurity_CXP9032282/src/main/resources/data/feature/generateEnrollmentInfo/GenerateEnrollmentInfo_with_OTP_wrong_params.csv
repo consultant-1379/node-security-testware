@@ -1,0 +1,3 @@
+fileName,expectedMessage,OTPCount,OTPValidityPeriod,Error Code,Error Details,additionalTestInfo
+GenerateEnrollmentInfo.xml,"EnrollmentInfo files generation has failed for all nodes",,43201,10091,"Invalid argument value : OTP validity period in minutes is invalid"," providing wrong OTPValidityPeriod [value = 43201]"
+GenerateEnrollmentInfo.xml,"EnrollmentInfo files generation has failed for all nodes",,0,10091,"Invalid argument value : OTP validity period in minutes is invalid"," providing wrong OTPValidityPeriod [value = 0]"

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_GCM_CIPHERSCONFIG - Vulcanians" parallel="false">
+    <test name="Setup Teardown GCMCiphersConfig Test">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioGcmCiphersConfig" />
+        </classes>
+    </test>
+    <test name="GcmCiphersConfig Test">
+        <classes>
+            <class
+                name="com.ericsson.nms.security.nscs.arnlrfa250scenario.GcmCiphersConfigTestScenario">
+            </class>
+        </classes>
+    </test>
+</suite>

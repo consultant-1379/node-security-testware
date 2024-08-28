@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Trust Integration - DespicableUs">
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="maintrack"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- TRUST INTEGRATION SCENARIOS -->
+
+    <!-- Taf Scheduler will be updated when pRBS is available in MainTrack -->
+    <test name="IntegrationTrustScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.CertificateTrustManagementECIMPositiveScenario"/>
+        </classes>
+    </test>
+
+</suite>

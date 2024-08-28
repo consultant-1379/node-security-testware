@@ -1,0 +1,5 @@
+forceTrustCategoryLAAD,originalCertTypeValue,trustCategory,caName,fileName
+true,OAM,LAAD,ENM_E-mail_CA,
+
+# The field 'forceTrustCategoryLAAD=true' forces all trust distribute/remove commands to use the option '--trustCategory LAAD' instead of '--certType OAM' on CPP RealNodes
+# The field 'originalCertTypeValue=OAM' is also needed by 'forceTrustCategoryLaad()' method, to avoid using original 'certType=OAM' field.

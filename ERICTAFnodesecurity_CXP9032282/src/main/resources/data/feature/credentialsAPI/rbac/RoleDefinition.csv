@@ -1,0 +1,3 @@
+type,name,description,status,policy,assignedRoles
+custom,credentials_nbi_role,credentials_nbi_role to update credentials by NBI,ENABLED,"{""nodesec_credentials_nbi"": [""update""]}",
+custom,update_credentials_snmp_nbi_role,credentials_snmp_nbi_role to update snmp credentials by NBI,ENABLED,"{""nodesec_snmpv3_nbi"": [""update""]}",

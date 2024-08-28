@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ericsson.nms.security.nscs</groupId>
+        <artifactId>node-security-testware</artifactId>
+        <version>1.137.3-SNAPSHOT</version>
+    </parent>
+    <artifactId>ERICTAFnodesecurity_CXP9032282</artifactId>
+    <name>NODE SECURITY - CXP9032282</name>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>ERICTAFnodesecurity_operators</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.presentation.client.scripting</groupId>
+            <artifactId>ClientScriptingTest</artifactId>
+            <version>${version.client-scripting-test}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.services.cm</groupId>
+            <artifactId>script-engine-editor-spi</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.testware.security</groupId>
+            <artifactId>utility-mng</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.cifwk.taf.testdatamanagement</groupId>
+            <artifactId>tdm-datasource</artifactId>
+            <version>${tdm-datasource.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.testware.security</groupId>
+            <artifactId>infrastructure-5g-operators</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.testware.securitypki</groupId>
+            <artifactId>ConfigurationManagement</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.testware.taf</groupId>
+            <artifactId>scenario-utilities</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ericsson.oss.testware.taf</groupId>
+            <artifactId>log-management</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

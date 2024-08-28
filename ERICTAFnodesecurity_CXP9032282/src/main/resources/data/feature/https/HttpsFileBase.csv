@@ -1,0 +1,2 @@
+fileName,compare,neStatus_activate,neStatus_deactivate,configuredStatus_activate,configuredStatus_deactivate
+httpsfile1.txt,MATCH,true,false,HTTPS,HTTP

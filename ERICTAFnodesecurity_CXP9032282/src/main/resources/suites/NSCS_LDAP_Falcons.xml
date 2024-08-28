@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_LDAP - Falcons" parallel="false">
+    <test name="Setup Teardown LDAP Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioLdap"/>
+        </classes>
+    </test>
+    <test name="TRUST Test" preserve-order="false">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.LdapTestScenario">
+                <methods>
+                    <include name="LdapConfigPositiveTest"/>
+                    <include name="LdapConfigPositiveTestManual"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

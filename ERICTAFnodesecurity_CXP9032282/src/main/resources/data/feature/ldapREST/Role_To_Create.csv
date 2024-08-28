@@ -1,0 +1,3 @@
+type,name,description,status,policy,assignedRoles
+custom,Ldap_REST,Custom Role Ldap_REST_TEST,ENABLED,"{""nodesec_ldap_nbi"": [""create"", ""delete""]}",
+custom,Ldap_role,LdapRole,ENABLED,"{""ldap"": [""create"", ""update"", ""patch""],""nodesec_proxy"": [""read"", ""update"", ""delete""]}",

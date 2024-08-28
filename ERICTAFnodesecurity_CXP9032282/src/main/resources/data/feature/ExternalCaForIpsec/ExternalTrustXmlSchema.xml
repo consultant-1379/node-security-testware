@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalTrustedCACertificatesDetails>
+  <NodesTrustedCACertificateDetails>
+    <Nodes>%s</Nodes>
+    <TrustedCACertificates>
+	  <TrustedCACertificateInfo>
+        <TDPSUrl>%s</TDPSUrl>
+        <TrustedCACertIssuerDn>%s</TrustedCACertIssuerDn>
+        <CertificateSerialNumber>0x%s</CertificateSerialNumber>
+      </TrustedCACertificateInfo>
+	</TrustedCACertificates>
+  </NodesTrustedCACertificateDetails>
+ </ExternalTrustedCACertificatesDetails>

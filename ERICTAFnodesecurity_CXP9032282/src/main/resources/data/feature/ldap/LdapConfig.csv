@@ -1,0 +1,2 @@
+Ldap,profileFilter,administrativeState,tlsMode,userLabel,useTls,expectedMsgLdapSet,bindDn,expectedResponse_getAll
+1,ERICSSON_FILTER,UNLOCKED,LDAPS,Skyfall,true,SUCCESS,"<null>",Successfully generated file ldap_proxy_get_all

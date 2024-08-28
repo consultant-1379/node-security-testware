@@ -1,0 +1,3 @@
+commandToSend,expectedResponse,checkResult
+secmode -u b,"Command executed successfully",true
+secmode -s,"basic",true

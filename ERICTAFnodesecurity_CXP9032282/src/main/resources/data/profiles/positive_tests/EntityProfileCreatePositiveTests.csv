@@ -1,0 +1,2 @@
+suiteProfile,certType,caName,fileName,command,expectedMsg
+extra,IPSEC,,"Entityprofile.xml","pkiadm pfm -c -xf file:","Profile created Successfully"

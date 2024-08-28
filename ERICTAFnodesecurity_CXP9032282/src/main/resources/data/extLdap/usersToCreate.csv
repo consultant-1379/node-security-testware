@@ -1,0 +1,4 @@
+context,username,firstName,lastName,email,password,enabled,roles,authMode
+1,DuExtLdapUser1,DuExtLdapUser1_firstname,DuExtLdapUser1_lastname,DuExtLdapUser1@test.it,DuExtLdapUser_1,true,ADMINISTRATOR,local
+2,rememarccr,rememarccr_firstname,rememarccr_lastname,rememarccr@test.it,TestPassw0rd,true,OPERATOR,remote
+3,remelucvo,remelucvo_firstname,remelucvo_lastname,remelucvo@test.it,TestPassw0rd,true,OPERATOR,remote

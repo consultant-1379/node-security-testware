@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ProfilesSchema.xsd">
+    <EntityProfile Name="Despicable_Us_Pico_NEW_EPxx">
+        <ProfileValidity>2022-05-30</ProfileValidity>
+        <Modifiable>true</Modifiable>
+        <Category>
+            <Modifiable>true</Modifiable>
+            <Name>NODE-IPSEC</Name>
+        </Category>
+        <Subject>
+            <SubjectField>
+                <Type>COMMON_NAME</Type>
+                <Value>?</Value>
+            </SubjectField>
+            <SubjectField>
+                <Type>ORGANIZATION</Type>
+                <Value>ERICSSON</Value>
+            </SubjectField>
+            <SubjectField>
+                <Type>COUNTRY_NAME</Type>
+                <Value>SE</Value>
+            </SubjectField>
+        </Subject>
+        <SubjectAltName>
+            <Critical>false</Critical>
+            <SubjectAltNameField>
+                <Type>IP_ADDRESS</Type>
+                <Value xsi:type="SubjectAltNameString">
+                    <StringValue>127.0.0.1</StringValue>
+                </Value>
+            </SubjectAltNameField>
+            <SubjectAltNameField>
+                <Type>DNS_NAME</Type>
+                <Value xsi:type="SubjectAltNameString">
+                    <StringValue>localhost</StringValue>
+                </Value>
+            </SubjectAltNameField>
+        </SubjectAltName>
+        <KeyGenerationAlgorithm>
+            <Name>RSA</Name>
+            <KeySize>2048</KeySize>
+        </KeyGenerationAlgorithm>
+        <CertificateProfile Name="PicoRBSIPSec_RS_SAN_CP"/>
+        <TrustProfile Name="Despicable_Us_TrustProfile"/>
+        <KeyUsage>
+            <Critical>true</Critical>
+            <SupportedKeyUsageType>DIGITAL_SIGNATURE</SupportedKeyUsageType>
+            <SupportedKeyUsageType>KEY_ENCIPHERMENT</SupportedKeyUsageType>
+            <SupportedKeyUsageType>KEY_AGREEMENT</SupportedKeyUsageType>
+        </KeyUsage>
+    </EntityProfile>
+</Profiles>

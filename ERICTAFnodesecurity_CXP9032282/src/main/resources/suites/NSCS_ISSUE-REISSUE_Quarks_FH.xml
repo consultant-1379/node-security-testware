@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_ISSUE-REISSUE_FH - Quarks" parallel="false">
+    <test name="Setup Teardown ISSUE-REISSUE Test">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioIssueReIssue"/>
+        </classes>
+    </test>
+    <test name="ISSUE-REISSUE Test" preserve-order="true">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.IssueReIssueTestScenario">
+              <methods>
+                <include name="issueOAMPositiveTest"/>
+                <include name="reIssueOAMCertTypePositiveTest"/>
+                <include name="reIssueOAMCertTypeNegativeTest"/>
+                <include name="issueOAMNegativeTest"/>
+                <exclude name="issueIPSECPositiveTest"/>
+                <exclude name="reIssueIPSECCertTypePositiveTest"/>
+                <include name="reIssueOAMCaNamePositiveTest"/>
+                <exclude name="reIssueIPSECCaNamePositiveTest"/>
+                <exclude name="issueIPSECNegativeTest"/>
+                <exclude name="reIssueIPSECCertTypeNegativeTest"/>
+                <include name="reIssueOAMCaNameNegativeTest"/>
+                <exclude name="reIssueIPSECCaNameNegativeTest"/>
+                <exclude name="issueReIssueNegativeSyntax"/>
+              </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

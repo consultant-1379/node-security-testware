@@ -1,0 +1,5 @@
+suiteProfile,testType,certType,nodeindex,expectedMessage
+maintrack,CT_Invalid_CertType,IPSECS,unexistingradionode,"10091"
+maintrack,CT_Node_Missing,OAM,unexistingradionode,"10004"
+maintrack,CT_Node_NotSupported,OAM,sgsn302,"10021"
+maintrack,CT_Node_NotSync,OAM,radionode014,"10005"

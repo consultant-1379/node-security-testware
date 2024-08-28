@@ -1,0 +1,12 @@
+username,firstName,lastName,email,password,passwordResetFlag,enabled,timeout,roles
+CmuserNodeSecurity1,cmtest1_firstname,cmtest1_lastname,cmtest1@test.it,Cmuserpasswd_1,false,true,60,ADMINISTRATOR
+CmuserNodeSecurity2,cmtest2_firstname,cmtest2_lastname,cmtest2@test.it,Cmuserpasswd_2,false,true,60,OPERATOR
+CmuserNodeSecurity3,cmtest3_firstname,cmtest3_lastname,cmtest3@test.it,Cmuserpasswd_3,false,true,60,SECURITY_ADMIN
+CmuserNodeSecurity4,cmtest4_firstname,cmtest4_lastname,cmtest4@test.it,Cmuserpasswd_4,false,true,60,FIELD_TECHNICIAN
+CmuserNodeSecurity5,cmtest5_firstname,cmtest5_lastname,cmtest5@test.it,Cmuserpasswd_5,false,true,60,credential_role
+CmuserNodeSecurity6,cmtest6_firstname,cmtest6_lastname,cmtest6@test.it,Cmuserpasswd_6,false,true,60,oam_role
+CmuserNodeSecurity7,cmtest7_firstname,cmtest7_lastname,cmtest7@test.it,Cmuserpasswd_7,false,true,60,ipsec_role
+CmuserNodeSecurity8,cmtest8_firstname,cmtest8_lastname,cmtest8@test.it,Cmuserpasswd_8,false,true,60,sshkey_role
+CmuserNodeSecurity9,cmtest9_firstname,cmtest9_lastname,cmtest9@test.it,Cmuserpasswd_9,false,true,60,get_credentials_role
+CmuserNodeSecurity10,cmtest10_firstname,cmtest10_lastname,cmtest10@test.it,Cmuserpasswd_10,false,true,60,get_credentials_snmp_role
+CmuserNodeSecurity11,DUSNodeSecurityNbiSnmpCred_fn,DUSNodeSecurityNbiSnmpCred_ln,,TestPassw0rd#1,false,true,60,update_credentials_snmp_nbi_role

@@ -1,0 +1,8 @@
+type,name,description,status,policy,assignedRoles
+custom,credential_role,Credentials,ENABLED,"{""credentials"": [""create"", ""update""]}",
+custom,oam_role,Oam,ENABLED,"{""oam"": [""read"", ""execute"", ""delete""]}",
+custom,ipsec_role,Ipsec,ENABLED,"{""ipsec"": [""read"", ""execute"", ""delete""]}",
+custom,sshkey_role,KeyGeneration,ENABLED,"{""sshkey"": [""create"", ""update""]}",
+custom,get_credentials_role,GetCredentials,ENABLED,"{""credentials"": [""create"", ""update"", ""read""],""credentials_plain_text"": [""read""],""cm_editor"": [""delete""]}",
+custom,get_credentials_snmp_role,GetSnmpCredentials,ENABLED,"{""snmpv3_plain_text"": [""read""],""snmpv3"": [""read""]}",
+custom,update_credentials_snmp_nbi_role,SnmpNbiUpdateCredentials,ENABLED,"{""nodesec_snmpv3_nbi"": [""update""]}",

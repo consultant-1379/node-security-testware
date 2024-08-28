@@ -1,0 +1,10 @@
+suiteProfile,nodeType,networkElementId,networkElementRange,ipAddress,sync,start,ossPrefix,port,transportType,buildNetsimObjects,platformType,ossModelIdentity
+
+maintrack,ERBS,LTE02ERBS00042,,192.168.2.42,sync,start,"MeContext=LTE02ERBS00042",,,,,
+maintrack,ERBS,LTE02ERBS00043,,192.168.2.43,sync,start,"MeContext=LTE02ERBS00043",,,,,
+maintrack,ERBS,LTE02ERBS00150,,192.168.2.150,sync,start,"MeContext=LTE02ERBS00150",,,,,
+maintrack,ERBS,LTE02ERBS00155,,192.168.2.151,sync,start,"MeContext=LTE02ERBS00155",,,,,
+
+maintrack,RadioNode,LTE01dg2ERBS00037,,192.168.100.250,sync,start,,6513,TLS,true,,
+maintrack,RadioNode,LTE01dg2ERBS00146,,192.168.100.250,sync,start,,6513,TLS,true,,
+

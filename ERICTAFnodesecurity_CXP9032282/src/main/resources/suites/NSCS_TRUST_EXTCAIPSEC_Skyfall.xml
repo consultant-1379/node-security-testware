@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS_TRUST_EXTCAIPSEC - Skyfall" parallel="false">
+	<test name="Setup and TearDown Trust Distribute External CA Test">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.SetupAndTeardownScenarioTrustExtCaIpsec"/>
+		</classes>
+	</test>
+	<test name="External CA Trust Distribute test" preserve-order="false">
+		<classes>
+			<class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.TrustExtCaIpsecTestScenario">
+			</class>
+	    </classes>
+	</test>
+</suite>

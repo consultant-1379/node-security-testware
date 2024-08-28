@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rtselConfiguration>
+    <nodeRtselConfig>
+        <nodes>
+            <nodeInfo>
+                <nodeFdns>
+                    <nodeFdn>%s</nodeFdn>
+                </nodeFdns>
+                <entityProfileName>MicroRBSOAM_CHAIN_EP</entityProfileName>
+                <enrollmentMode>SCEP</enrollmentMode>
+                <keySize>RSA_2048</keySize>
+            </nodeInfo>
+        </nodes>
+        <serverConfig>
+            <extServerAddress>192.168.1.2</extServerAddress>
+            <extServProtocol>TLS_OVER_TCP</extServProtocol>
+            <serverName>SyslogServ1</serverName>
+        </serverConfig>
+        <connAttemptTimeOut>12</connAttemptTimeOut>
+        <extServerLogLevel>DEBUG</extServerLogLevel>
+        <extServerAppName>Ericsson</extServerAppName>
+    </nodeRtselConfig>
+</rtselConfiguration>

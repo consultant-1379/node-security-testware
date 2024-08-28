@@ -1,0 +1,2 @@
+invalidSN,invalidSNFormat,expectedMessage,invalidSN_expectedWorkFlowError_COMECIM,invalidSN_expectedWorkFlowError_CPP,invalidSNFormat_expectedMessage
+1234567890,123f45a,,"Not found installed TrustedCertificate MO with SN [%s]","no trust certificate installed for trustCategory:%s, SN:%s","Error 10091"

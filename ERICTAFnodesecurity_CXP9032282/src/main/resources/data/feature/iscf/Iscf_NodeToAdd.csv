@@ -1,0 +1,4 @@
+nodeType,networkElementId,ipAddress,ossPrefix,neProductVersion,ossModelIdentity,port,transportType,nodeOperatorType
+ERBS,LTEiscfERBS00102,192.1.1.201,,,19.Q3-J.4.50,,,NETSIM
+RadioNode,LTEsecdataRadio00002,192.168.100.190,,,,6513,TLS,NETSIM
+

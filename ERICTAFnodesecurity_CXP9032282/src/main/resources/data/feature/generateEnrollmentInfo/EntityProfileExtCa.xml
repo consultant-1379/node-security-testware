@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Profiles>
+    <EntityProfile Name="%s">
+        <Modifiable>false</Modifiable>
+        <Category>
+            <Name>NODE-OAM</Name>
+            <Modifiable>false</Modifiable>
+        </Category>
+        <Subject>
+            <SubjectField>
+                <Type>COUNTRY_NAME</Type>
+                <Value>SE</Value>
+            </SubjectField>
+            <SubjectField>
+                <Type>COMMON_NAME</Type>
+                <Value>?</Value>
+            </SubjectField>
+        </Subject>
+        <KeyGenerationAlgorithm>
+            <Name>RSA</Name>
+            <KeySize>2048</KeySize>
+        </KeyGenerationAlgorithm>
+        <CertificateProfile Name="DUSGen2OAM_CP"/>
+        <TrustProfile Name="%s"/>
+        <KeyUsage>
+            <Critical>true</Critical>
+            <SupportedKeyUsageType>DIGITAL_SIGNATURE</SupportedKeyUsageType>
+            <SupportedKeyUsageType>KEY_AGREEMENT</SupportedKeyUsageType>
+            <SupportedKeyUsageType>KEY_ENCIPHERMENT</SupportedKeyUsageType>
+        </KeyUsage>
+    </EntityProfile>
+</Profiles>

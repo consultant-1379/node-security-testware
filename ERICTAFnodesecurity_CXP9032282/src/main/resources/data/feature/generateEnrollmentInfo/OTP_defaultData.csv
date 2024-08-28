@@ -1,0 +1,2 @@
+pibParameterName,OtpCount_CapabilityName,OtpValidity_CapabilityName,expectedMessage
+defaultOtpValidityPeriod,defaultInitialOtpCount,defaultOtpValidityPeriodInMinutes,Command Executed Successfully

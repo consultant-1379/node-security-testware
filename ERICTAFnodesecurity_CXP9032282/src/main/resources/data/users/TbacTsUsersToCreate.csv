@@ -1,0 +1,3 @@
+username,firstName,lastName,email,password,enabled,roles
+nsuNSADM1,nsuNSADM1_firstname,nsuNSADM1_lastname,nsuNSADM1@test.it,nsuNSADM1_1,true,"NodeSecurity_Administrator,Cmedit_Administrator,FM_Administrator,SECURITY_ADMIN"
+nsuNSOPER1,nsuNSOPER1_firstname,nsuNSOPER1_lastname,nsuNSOPER1@test.it,nsuNSOPER1_1,true,"NodeSecurity_Operator"

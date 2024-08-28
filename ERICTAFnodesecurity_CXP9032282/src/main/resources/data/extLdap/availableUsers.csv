@@ -1,0 +1,6 @@
+context,username,firstName,lastName,email,password,enabled,roles,expected
+1,DuExtLdapUser1,DuExtLdapUser1_firstname,DuExtLdapUser1_lastname,DuExtLdapUser1@test.it,DuExtLdapUser_1,true,ADMINISTRATOR,
+2,rememarccr,rememarccr_firstname,rememarccr_lastname,rememarccr@test.it,TestPassw0rd,true,OPERATOR,
+3,rememarccr,rememarccr_firstname,rememarccr_lastname,rememarccr@test.it,Rememarccr01,true,OPERATOR,
+4,remelucvo,remelucvo_firstname,remelucvo_lastname,remelucvo@test.it,TestPassw0rd,true,OPERATOR,
+5,remelucvo,remelucvo_firstname,remelucvo_lastname,remelucvo@test.it,Remelucvo01,true,OPERATOR,

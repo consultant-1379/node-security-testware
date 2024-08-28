@@ -1,0 +1,6 @@
+suiteProfile,testType,certType,caName,nodeindex,expectedMessage
+maintrack,CT_Invalid_CertType,IPSECS,,erbs005,"Error 10091 : Invalid argument value :  Invalid argument for parameter certtype. Accepted arguments are [IPSEC, OAM]"
+maintrack,CT_Node_Missing,OAM,,nonexistentnode,"10004"
+
+maintrack,CA_Node_Missing,OAM,NE_OAM_CA,nonexistentnode,"10004"
+maintrack,CA_Missing,OAM,CA_TEST,nonexistentnode,"Error 10091 : Invalid argument value :  Invalid argument for parameter ca. Input CA value is not valid."

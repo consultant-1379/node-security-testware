@@ -1,0 +1,9 @@
+suiteProfile,nodeType,networkElementId,networkElementRange,ipAddress,sync,start,ossPrefix,port,transportType,buildNetsimObjects,platformType,ossModelIdentity
+
+maintrack,ERBS,LTE17ERBS00043,,192.168.2.42,,,"MeContext=LTE17ERBS00043",,,,,
+maintrack,ERBS,LTE17ERBS00150,,192.168.2.43,,,"MeContext=LTE17ERBS00150",,,,,
+
+maintrack,SGSN-MME,SGSN-16A-CP01-V110,,192.168.105.29,,start,"MeContext=SGSN-16A-CP01-V110",22,SSH,,,
+#maintrack,SGSN-MME,SGSN-16A-CP01-V124,,192.168.105.3,,start,"MeContext=SGSN-16A-CP01-V124",22,SSH,,,
+
+maintrack,RadioNode,LTE03dg2ERBS00037,,192.168.100.250,,,,6513,TLS,,,

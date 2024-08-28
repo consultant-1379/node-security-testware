@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Nodes>
+    <Node>
+        <nodeFdn>%s</nodeFdn>
+        <entityProfileName>Profile_1</entityProfileName>
+        <subjectAltName>DEMO_SUB_ALT_NAME_001</subjectAltName>
+        <subjectAltNameType>1.1.1.1</subjectAltNameType>
+        <enrollmentMode>SCEP</enrollmentMode>
+        <keySize>2048</keySize>
+    </Node>
+</Nodes>

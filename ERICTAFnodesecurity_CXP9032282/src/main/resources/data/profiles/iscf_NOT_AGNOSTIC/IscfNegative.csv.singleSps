@@ -1,0 +1,65 @@
+useCase,logicalName,nodeFdn,wantedSecLevel,minimumSecLevel,ipsecUserLabel,subjectAltName,subjectAltNameType,ipsecAreas,wantedEnrolMode,nodeType,mimVersion,expectedExceptionSubstring
+
+OAM,"",LTEiscfOAM__negERBS00101,2,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: Logical Name cannot be null"
+OAM,LOGICALiscfOAM__neg,"",2,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Node FDN cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00103,"",1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Wanted Security Level and Minimum Security Level cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00104,2,"",,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Wanted Security Level and Minimum Security Level cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00105,2,1,,,,,"",ERBS,E.1.239,"Enrollment Mode cannot be null"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00106,2,1,,,,,SCEP,"",E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00107,2,1,,,,,SCEP,ERBS,"","com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Null or empty MIM version"
+
+OAM,                   ,LTEiscfOAM__negERBS00111,2,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: Logical Name must contain an alphanumeric character"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00113, ,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Wanted Security Level invalid"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00114,2, ,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level invalid"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00115,2,1,,,,,    ,ERBS,E.1.239,"Enrollment Mode not supported by node model: NOT_SUPPORTED"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00116,2,1,,,,,SCEP,    ,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Node Type must not contain blank characters"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00117,2,1,,,,,SCEP,ERBS,      ,"com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Invalid format for MIM version:"
+
+OAM,LOGICALiscfOAM__neg,%LTEiscfOAM__negERBS00121,2,1,,,,,SCEP,ERBS,E.1.239,"caught PKI exception Invalid Name Format! %LTEiscfOAM__negERBS00121-oam"
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00131,0,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Wanted Security Level invalid"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00132,4,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Wanted Security Level invalid"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00133,1,0,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level invalid"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00134,1,4,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level invalid"
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00141,2,1,,,,,SCEP,CPP,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00142,2,1,,,,,SCEP,MSRbs_V1,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00143,2,1,,,,,SCEP,SGSN-MME,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00144,2,1,,,,,SCEP,ERBS,e.1.239,"com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Caught exception while parsing MIM version: e.1.239"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00145,2,1,,,,,SCEP,ERBS,E.149,"com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Invalid format for MIM version: E.149"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00146,2,1,,,,,SCEP,ERBS,"E,1.49","com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Invalid format for MIM version: E,1.49"
+
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00151,3,3,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Security Level 3 not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00152,3,2,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Security Level 3 not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00153,3,1,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Security Level 3 not supported"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00154,1,2,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level cannot be greater than Wanted Security Level"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00155,1,3,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level cannot be greater than Wanted Security Level"
+OAM,LOGICALiscfOAM__neg,LTEiscfOAM__negERBS00156,2,3,,,,,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.SecurityLevelNotSupportedException: Minimum Security Level cannot be greater than Wanted Security Level"
+
+
+
+IPSec,"",LTEiscfIPSECnegERBS00201,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: Logical Name cannot be null"
+IPSec,LOGICALiscfIPSECneg,"",,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Node FDN cannot be null"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00203,,,"",1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: User Label cannot be null"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00204,,,LABELiscfIPSECneg,"",IPV4,OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00205,,,LABELiscfIPSECneg,1.2.3.4,"",OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00207,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,"",ERBS,E.1.239,"Enrollment Mode cannot be null"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00208,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,"",E.1.239,"com.ericsson.nms.security.nscs.cpp.service.CppSecurityServiceException: Enrollment Mode not supported by node model: SCEP"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00209,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,"","com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Null or empty MIM version"
+
+IPSec,                   ,LTEiscfIPSECnegERBS00211,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: Logical Name must contain an alphanumeric character"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00213,,,                 ,1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: User Label must contain an alphanumeric character"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00214,,,LABELiscfIPSECneg,       ,IPV4,OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00215,,,LABELiscfIPSECneg,1.2.3.4,    ,OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00217,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,    ,ERBS,E.1.239,"Enrollment Mode not supported by node model: NOT_SUPPORTED"
+
+IPSec,LOGICALiscfIPSECneg,LTEiscfIPSECnegERBS00219,,,LABELiscfIPSECneg,1.2.3.4,IPV4,OM,SCEP,ERBS,      ,"com.ericsson.nms.security.nscs.api.exception.InvalidVersionException: Invalid format for MIM version:"
+
+
+
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00301,2,1,"",1.2.3.4,IPV4,OM,SCEP,ERBS,E.1.239,"com.ericsson.nms.security.nscs.iscf.InvalidNodeAIDataException: User Label cannot be null"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00302,2,1,LABELiscfCOMBOneg,       ,IPV4,OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"
+COMBO,LOGICALiscfCOMBOneg,LTEiscfCOMBOnegERBS00303,2,1,LABELiscfCOMBOneg,1.2.3.4,    ,OM,SCEP,ERBS,E.1.239,"caught PKI exception subjectAltNameFieldValues for IPAddress should not be empty or null"

@@ -1,0 +1,5 @@
+commandToSend,expectedResponse,checkResult
+secmode -u e,"Command executed successfully",true
+secmode -s,"unconfirmed",true
+secmode -u c,"Command executed successfully",true
+secmode -s,"enhanced",true

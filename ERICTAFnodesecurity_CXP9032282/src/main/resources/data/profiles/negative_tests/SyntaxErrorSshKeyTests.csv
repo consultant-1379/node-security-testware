@@ -1,0 +1,13 @@
+command,purpose
+secadm sshkey,no command mandatory parameters
+secadm sshkey create, no command mandatory parameters
+secadm sshkey create -n node_0001, missing mandatory parameter: algorithm-type-size
+secadm sshkey create -t RSA_1024, missing mandatory parameter: nodelist
+secadm sshkey create --n node_0001 --algorithm-type-size RSA_1024, invalid argument --n: needed -n
+secadm sshkey create -nodelist node_0001 --algorithm-type-size RSA_1024, invalid argument -nodelist: needed --nodelist
+secadm sshkey create -n node_0001 --t RSA_1024, invalid argument --t: needed -t
+secadm sshkey create -n node_0001 -algorithm-type-size RSA_1024, invalid argument -algorithm-type-size: needed --algorithm-type-size
+secadm sshkey update -nn SGSN_SM_0001 -t RSA_2048,invalid argument -nn
+secadm sshkey update -n SGSN_SM_0001 algorithm-type-size RSA_2048,invalid argument algorithm-type-size
+secadm sshkey update -nodelist SGSN_SM_0001, invalid argument -nodelist
+secadm sshkey update --nodelist SGSN_SM_0001 -algorithm-type-size RSA_1024,invalid argument -algorithm-type-size

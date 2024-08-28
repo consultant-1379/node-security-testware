@@ -1,0 +1,46 @@
+targetCategory,targetType,targetModelIdentifier,modelIdentifierType,enrollmentMode,logicalName,nodeFdn,wantedSecurityLevel,minimumSecurityLevel,expectedHttpStatus,additionalTestInfo,expectedHttpResponse
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS0010001,"NetworkElement=LTEiscfERBS0010001",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when [Non Existing nodeFdn] is provided","NormalizedNodeReference MO is null"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,,LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [null nodeFdn] is provided","Wrong FDN[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"blank",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated  when a [blank nodeFdn] is provided","Wrong FDN[]"
+
+#### NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,blank,400," - Verify OAM ISCF is NOT generated  when a [blank minimumSecurityLevel] is provided","Internal error: No enum constant com.ericsson.nms.security.nscs.api.enums.SecurityLevel"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,,400," - Verify OAM ISCF is NOT generated  when a [null minimumSecurityLevel] is provided","Wrong Minimum Security Level[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_1,LEVEL_2,400," - Verify OAM ISCF is NOT generated  when a [minimumSecurityLevel greater than wantedSecurityLevel] is provided","Minimum Security Level[LEVEL_2] cannot be greater than Wanted Security Level[LEVEL_2]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",,,400," - Verify OAM ISCF is NOT generated  when a [null 'params' object] is provided","Wrong Wanted Security Level[null] and Wrong Minimum Security Level[null]"
+
+NODE,CPP,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [wrong targetType 'CPP'] is provided","node type[CPP] not supported"
+
+NODE,,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [null targetType] is provided","Wrong node type[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,ONLINE_SCEP,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when [NOT_SUPPORTED enrollmentMode 'ONLINE_SCEP'] is provided","Wanted Enrollment Mode[ONLINE_SCEP] not supported for NE type[ERBS]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when [null enrollmentMode] is provided","Wrong Enrollment Mode[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [null logicalName] is provided","Wrong logical name[null]"
+
+NODE,ERBS,"19.Q3-J.4.50",OSS_IDENTIFIER,CMPv2_INITIAL,blank,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [blank logicalName] is provided","Wrong logical name[]"
+
+#### NODE,ERBS,"19.Q3-J.4.50",blank,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [blank modelIdentifierType] is provided","Internal error: No enum constant com.ericsson.nms.security.nscs.api.model.NodeModelInformation.ModelIdentifierType"
+
+,,,,CMPv2_INITIAL,LTEiscfERBS00102,"NetworkElement=LTEiscfERBS00102",LEVEL_2,LEVEL_2,400," - Verify OAM ISCF is NOT generated when a [wrong DTO] is provided","Bad request : Null mandatory DTO"
+
+
+
+##### conventions for negative tests:
+# do not remove or change the label fields
+#
+###### Test with <Blank> String :
+#      Put the label <blank> - without double quote - in the field value to # be tested.
+#
+#
+###### Test with <null> field :
+#      Remove the field value to be tested.
+#
+# a library specific method  will create the body Json to provide to the REST POST request accordingly
+#

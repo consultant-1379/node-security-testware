@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Node Security_Certificate Issue GAT - Skyfall">
+
+    <parameter name="dataprovidername" value="nodesToAddOld"/>
+    <parameter name="nscsprofiles" value="extra"/>
+    <parameter name="isRunningInRFA250" value="false"/>
+
+    <!-- SETUP AND TEARDOWN ENVIRONMENT -->
+
+    <test name="SetUpTearDownScenarios">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.SetUpTearDownScenario"/>
+        </classes>
+    </test>
+
+    <!-- CERTIFICATE ISSUE SCENARIOS -->
+
+    <test name="GatScenario">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.scenario.GatScenario">
+                <methods>
+                    <include name="certificateIssueGatOam"/>
+                    <include name="certificateIssueGatIpsec"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

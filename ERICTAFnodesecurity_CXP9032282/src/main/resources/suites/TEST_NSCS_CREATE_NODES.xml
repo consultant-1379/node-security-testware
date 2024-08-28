@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="NSCS CREATE NODES" parallel="false">
+    <test name="Create Nodes">
+        <classes>
+            <class name="com.ericsson.nms.security.nscs.arnlrfa250scenario.test.SetupAndTeardownScenarioCreateNode"/>
+        </classes>
+    </test>
+</suite>

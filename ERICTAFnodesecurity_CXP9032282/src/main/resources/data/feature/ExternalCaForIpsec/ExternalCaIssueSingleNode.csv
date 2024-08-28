@@ -1,0 +1,2 @@
+fileName,caName,certType,caCertificateValue,useExtCa
+ExternalIssueSingleSchema.xml,ENM_PKI_Root_CA,IPSEC,ENM_PKI_Root_CA,true

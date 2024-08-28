@@ -1,0 +1,2 @@
+expectedHttpStatus,expectedHttpResponse,enmCliResponse
+200,"Successfully created/updated node credentials",Command Executed Successfully

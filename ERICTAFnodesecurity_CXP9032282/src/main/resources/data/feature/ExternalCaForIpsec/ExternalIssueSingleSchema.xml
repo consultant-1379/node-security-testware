@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnrollmentDetails>
+    <nodeEnrollmentDetails> <!-- Repeat this tag along with all the sub tags in case of enrolling multiple nodes -->
+        <Nodes>%s</Nodes>
+        <externalCAEnrollmentInfo>
+            <externalCAEnrollmentDetails>
+                <certificateAuthorityDn>CN=NE_IPsec_CA,OU=BUCI_DUAC_NAM,O=ERICSSON,C=SE</certificateAuthorityDn> <!-- SubjectDN of the node certificate issuer -->
+                <caCertificate>%s</caCertificate> <!-- will be provided in base64 format -->
+                <enrollmentServerUrl>%s</enrollmentServerUrl> <!-- Enrollment Server URL of External CA -->
+            </externalCAEnrollmentDetails>
+            <TrustedCACertificates> <!-- This is an optional field which can be removed if the trust distribution will be done manually -->
+                <TrustedCACertificateInfo>
+                    <TDPSUrl>%s</TDPSUrl> <!-- TDPS URL of the certificate to be installed as trust -->
+                    <TrustedCACertIssuerDn>%s</TrustedCACertIssuerDn> <!-- IssuerDN of the trust certificate -->
+                    <CertificateSerialNumber>0x%s</CertificateSerialNumber> <!-- Serial number of the trust certificate -->
+                </TrustedCACertificateInfo>
+	        </TrustedCACertificates>
+        </externalCAEnrollmentInfo>
+    </nodeEnrollmentDetails>
+</EnrollmentDetails>

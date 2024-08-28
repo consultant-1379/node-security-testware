@@ -1,0 +1,2 @@
+certType,subjectAltName,subjectAltNameType,expectedMessage
+ALL,192.168.100.1,IP_ADDRESS,Error 10099

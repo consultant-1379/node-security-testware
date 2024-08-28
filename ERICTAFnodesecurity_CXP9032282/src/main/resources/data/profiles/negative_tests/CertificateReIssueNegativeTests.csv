@@ -1,0 +1,9 @@
+suiteProfile,testType,certType,caName,serialNumber,nodeindex,reason,expectedMessage
+maintrack,CT_Invalid_CertType,IPSECS,,,erbs001,,"Error 10091 : Invalid argument value :  Invalid argument for parameter certtype. Accepted arguments are [IPSEC, OAM]"
+maintrack,CT_Invalid_Reason,OAM,,,erbs001,reason,"Error 10091 : Invalid argument value :  Invalid argument for parameter reason. Accepted arguments are [unspecified, keyCompromise, CACompromise, affiliationChanged, superseded, cessationOfOperation, certificateHold, removeFromCRL, privilegeWithdrawn, AACompromise]"
+maintrack,CT_Node_Missing,OAM,,,nonexistentnode,,Error 10004 : The NetworkElement specified does not exist
+
+maintrack,CA_Missing,OAM,CA_TEST,,erbs001,,Error 10091 : Invalid argument value : Certificate reissue command not executed. Input CA or entities not found.
+maintrack,CA_Invalid_Category,OAM,ENM_Management_CA,,erbs001,,Certificate reissue command not executed. Entities signed by input CA with requested certificate type not found
+maintrack,CA_Invalid_SerialNumber,OAM,NE_OAM_CA,1111111111111111,erbs001,,Error 10091 : Invalid argument value : Following input serial numbers are invalid
+maintrack,CA_Node_Missing,OAM,NE_OAM_CA,,nonexistentnode,,Error 10004 : The NetworkElement specified does not exist

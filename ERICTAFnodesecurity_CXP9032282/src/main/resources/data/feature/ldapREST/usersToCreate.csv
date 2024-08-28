@@ -1,0 +1,6 @@
+context,username,firstName,lastName,email,password,passwordResetFlag,enabled,timeout,roles
+1,LdapREST_ADMIN,LdapREST_ADMIN,LdapREST_ADMIN,LdapREST_ADMIN@test.com,NscsAdm#02,false,true,60,"Ldap_REST"
+2,LdapREST_Operator,LdapREST_Operator,LdapREST_Operator,Ldap_REST_Operator@test.com,TestOper#03,false,true,60,"NodeSecurity_Operator,Cmedit_Administrator"
+3,Ldap_ADMIN,Ldap_ADMIN,Ldap_ADMIN,Ldap_ADMIN@test.com,NscsAdm#03,false,true,60,Ldap_role
+
+

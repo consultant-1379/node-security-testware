@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EntitiesSchema.xsd">
+    <Entity>
+        <PublishCertificatetoTDPS>false</PublishCertificatetoTDPS>
+        <EntityProfile Name="Despicable_Us_Pico_NEW_EPxx"/>
+        <Category Id="4">
+            <Name>NODE-IPSEC</Name>
+        </Category>
+        <EntityInfo>
+            <Id>##EE_ID##</Id>
+            <Name>LTE07pERBS00002-ipsec</Name>
+            <Subject>
+                <SubjectField>
+                    <Type>COMMON_NAME</Type>
+                    <Value>1234.Despicable.Us</Value>
+                </SubjectField>
+                <SubjectField>
+                    <Type>COUNTRY_NAME</Type>
+                    <Value>SE</Value>
+                </SubjectField>
+                <SubjectField>
+                    <Type>ORGANIZATION</Type>
+                    <Value>ERICSSON</Value>
+                </SubjectField>
+            </Subject>
+        </EntityInfo>
+    </Entity>
+</Entities>

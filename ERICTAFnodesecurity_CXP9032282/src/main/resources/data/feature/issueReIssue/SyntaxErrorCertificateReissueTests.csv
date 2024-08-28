@@ -1,0 +1,23 @@
+command,purpose,expectedMessage
+secadm certificate reissue,no command mandatory parameters,Error 10001
+secadm certificate reissue --certtype IPSEC, missing mandatory parameter --nodelist,Error 10001
+secadm certificate reissue -ct -n nod1, invalid parameter -ct,Error 10001
+secadm certificate reissue --nodelist node1, missing mandatory parameter --certtype,Error 10001
+secadm certificate reissue --certtype IPSEC --xmlfile file:abc.xml, unexpected param --xmlfile,Error 10001
+secadm certificate reissue -certtype IPSEC -n node1, invalid param -certtype,Error 10001
+secadm certificate reissue --certtype IPSEC -nodelist node1, invalid param -nodelist,Error 10001
+secadm certificate reissue -n node1 -ct IPSEC, invalid reverse order param,Error 10001
+
+secadm certificate reissue -ct OAM -ca CA_NAME --serialnumber, invalid param --serialnumber,Error 10001
+secadm certificate reissue -ct OAM -ca CA_NAME --nodelist, invalid param -nodelist,Error 10001
+secadm certificate reissue -ct OAM -ca CA_NAME --nodefile file:, invalid param --nodefile,Error 10001
+secadm certificate reissue -ct OAM -ca CA_NAME --r unspecified, invalid param --r,Error 10001
+secadm certificate reissue -ct OAM -ca CA_NAME --serialnumber 12345 --nodelist node1, unexpected param --serialnumber --nodelist,Error 10001
+secadm certificate reissue -ct OAM -ca CA_NAME --serialnumber 12345 --nodefile file:node1, unexpected param --serialnumber --nodefile,Error 10001
+
+
+secadm certificate reissue -ct OAM -sn 12345 -ca CA_NAME, invalid reverse order param,Error 10001
+secadm certificate reissue -ct OAM -n node1 -ca CA_NAME, invalid reverse order param,Error 10001
+secadm certificate reissue -ct OAM -r unspecified -ca CA_NAME, invalid reverse order param,Error 10001
+
+secadm certificate reissue -ca CA_NAME -ct OAM -n node1, invalid reverse order params,Error 10001

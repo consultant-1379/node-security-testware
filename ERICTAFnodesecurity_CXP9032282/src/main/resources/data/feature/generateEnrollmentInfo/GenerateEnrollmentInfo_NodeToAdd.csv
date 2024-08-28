@@ -1,0 +1,4 @@
+suiteName,teamName,nodeOperatorType,nodeType,platformType,networkElementId,ipAddress,ossModelIdentity,ossPrefix,port,transportType,snmpAgentPort,snmpVersion,rootUserName,rootUserPassword,secureUserName,secureUserPassword,normalUserName,normalUserPassword,timeZone
+NSCS_GENERATE_ENROLLMENT_INFO - Skyfall,Skyfall,NETSIM,RadioNode,,LTE99dg2ERBS9999,192.7.8.9,,MeContext=LTE99dg2ERBS9999,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,
+NSCS_GENERATE_ENROLLMENT_INFO - Skyfall,Skyfall,NETSIM,Shared-CNF,CBP-OI,5GSharedCNF001Inet6,"2001:0db8:85a3:0000:1319:8a2e:0370:7344",,MeContext=5GSharedCNF001Inet6,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,Europe/Dublin
+NSCS_GENERATE_ENROLLMENT_INFO - Skyfall,Skyfall,NETSIM,Shared-CNF,CBP-OI,5GSharedCNF001Inet4,"192.6.7.8",,MeContext=5GSharedCNF001Inet4,6513,TLS,161,SNMP_V2C,,,netsim,netsim,,,Europe/Dublin
